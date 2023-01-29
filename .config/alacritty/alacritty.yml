@@ -4,6 +4,9 @@
 #   / ___ \| | (_| | (__| |  | | |_| |_| |_| |
 #  /_/   \_\_|\__,_|\___|_|  |_|\__|\__|\__, |
 #                                       |___/ 
+
+background_opacity: 0.8
+
 window:
   opacity: 0.8
   
@@ -28,6 +31,9 @@ font:
   size: 7
 
 colors:
+  primary:
+    background: '0x232627'
+    foreground: '0xFCFCFC'
   # Selection colors
   selection:
     text: CellForeground
@@ -52,3 +58,9 @@ colors:
     magenta:  '0xA578EA'
     cyan:     '0x73FBF1'
     white:    '0xFEFEF8'
+
+shell:
+  program: /bin/zsh
+
+selection: 
+  dynamic_title: true
