@@ -1,0 +1,49 @@
+window:
+  opacity: 0.8
+  
+  dimensions:
+    columns: 75
+    lines: 40
+
+  title: Terminal
+
+  dynamic_title: true
+
+font:
+  normal: 
+    family: FiraCode
+    style: Regular
+  bold:
+    family: Fira Code
+    style: Bold
+  italic:
+    family: Fira Code
+    style: Italic
+  size: 7
+
+colors:
+  # Selection colors
+  selection:
+    text: CellForeground
+    background: '0x3e4452'
+  # Normal colors
+  normal:
+    black:    '0x0D0D0D'
+    red:      '0xFF301B'
+    green:    '0xA0E521'
+    yellow:   '0xFFC620'
+    blue:     '0x178ad1'
+    magenta:  '0x8763B8'
+    cyan:     '0x21DEEF'
+    white:    '0xEBEBEB'
+
+  # Bright colors
+  bright:
+    black:    '0x6D7070'
+    red:      '0xFF4352'
+    green:    '0xB8E466'
+    yellow:   '0xFFD750'
+    blue:     '0x1BA6FA'
+    magenta:  '0xA578EA'
+    cyan:     '0x73FBF1'
+    white:    '0xFEFEF8'
