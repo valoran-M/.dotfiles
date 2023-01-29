@@ -1,24 +1,7 @@
---[[ require "user.alpha" ]]
---[[ require "user.colorscheme" ]]
---[[ require "user.options" ]]
---[[ require "user.keymaps" ]]
---[[ require "user.plugins" ]]
---[[ require "user.nvim-tree" ]]
---[[ require "user.vimtex" ]]
---[[ require "user.cmp"  ]]
---[[ require "user.telescope"  ]]
---[[ require "user.autopairs"  ]]
---[[ require "user.toggleterm" ]]
---[[ require "user.bufferline" ]]
---[[ require "user.comment" ]]
---[[ require "user.treesitter" ]]
---[[ require "user.lsp" ]]
---[[ require "user.formatter" ]]
---[[ require "user.identline" ]]
---[[ require "user.lualine"  ]]
---[[ require "user.wichkeys" ]]
---[[ require "user.gitsigns" ]]
---[[ require "user.trouble"  ]]
---[[ require "user.autocommands" ]]
+--  ___     ___    ___   __  __ /\_\    ___ ___    
+-- / _ `\  / __`\ / __`\/\ \/\ \\/\ \  / __` __`\  
+--/\ \/\ \/\  __//\ \_\ \ \ \_/ |\ \ \/\ \/\ \/\ \ 
+--\ \_\ \_\ \____\ \____/\ \___/  \ \_\ \_\ \_\ \_\
+-- \/_/\/_/\/____/\/___/  \/__/    \/_/\/_/\/_/\/_/
 
 require "valo"

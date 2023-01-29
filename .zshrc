@@ -1,11 +1,8 @@
-#           _
-#   _______| |__  _ __ ___
-#  |_  / __| '_ \| '__/ __|
-# _ / /\__ \ | | | | | (__
-#(_)___|___/_| |_|_|  \___|
-#
-# Basic zsh config.
-# Author: MythicalNewt
+#            _              
+#    _______| |__  _ __ ___ 
+#   |_  / __| '_ \| '__/ __|
+#  _ / /\__ \ | | | | | (__ 
+# (_)___|___/_| |_|_|  \___|
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
