@@ -1,0 +1,6 @@
+require "valo.plugins.interface.alpha"
+require "valo.plugins.interface.bufferline"
+require "valo.plugins.interface.indentline"
+require "valo.plugins.interface.lualine"
+require "valo.plugins.interface.nvim-tree"
+require "valo.plugins.interface.treesitter"

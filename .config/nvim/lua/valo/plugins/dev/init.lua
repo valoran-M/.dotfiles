@@ -1,0 +1,5 @@
+require "valo.plugins.dev.comment"
+require "valo.plugins.dev.rust-tools"
+require "valo.plugins.dev.trouble"
+require "valo.plugins.dev.vimtex"
+require "valo.plugins.dev.lsp"

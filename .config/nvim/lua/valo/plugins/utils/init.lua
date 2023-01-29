@@ -1,0 +1,6 @@
+require "valo.plugins.utils.autopairs"
+require "valo.plugins.utils.cmp"
+require "valo.plugins.utils.telescope"
+require "valo.plugins.utils.toggleterm"
+require "valo.plugins.utils.whichkeys"
+require "valo.plugins.utils.toggleterm"
