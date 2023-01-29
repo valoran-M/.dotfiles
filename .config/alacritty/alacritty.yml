@@ -36,7 +36,6 @@ colors:
     magenta:  '0x8763B8'
     cyan:     '0x21DEEF'
     white:    '0xEBEBEB'
-
   # Bright colors
   bright:
     black:    '0x6D7070'
