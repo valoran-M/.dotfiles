@@ -40,6 +40,8 @@ keymap("n", "<A-k>", "<Esc>:m .-2<CR>==", opts)
 --save with Ctrl+s 
 keymap("n", "<C-s>", ":w<CR>", opts)
 
+keymap("n", "<C-i>", ":Format<CR>", opts)
+
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
