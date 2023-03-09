@@ -80,6 +80,7 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer"
   use "jose-elias-alvarez/null-ls.nvim" -- LSP diagnostics and code actions
+  use "brymer-meneses/grammar-guard.nvim"
   use "simrat39/rust-tools.nvim"
   use 'folke/trouble.nvim'
 
@@ -104,6 +105,9 @@ return packer.startup(function(use)
   use "p00f/nvim-ts-rainbow"
   use "nvim-treesitter/playground" 
   use "JoosepAlviste/nvim-ts-context-commentstring"
+
+  use "RaafatTurki/hex.nvim"
+
   
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

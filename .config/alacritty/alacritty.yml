@@ -11,10 +11,12 @@ window:
   opacity: 0.8
   
   dimensions:
-    columns: 75
-    lines: 40
+    columns: 0
+    lines: 0
 
   title: Terminal
+
+  startup_mode: Maximized
 
   dynamic_title: true
 

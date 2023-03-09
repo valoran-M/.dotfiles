@@ -85,6 +85,9 @@ alias ocamllsp="ocamllsp --fallback-read-dot-merlin"
 #dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
+autoload run-help
+alias help=run-help
+
 ## vim related ignore ##
 export MICRO_TRUECOLOR=1
 export VISUAL=vim

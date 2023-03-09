@@ -134,6 +134,16 @@ _G.packer_plugins = {
     path = "/home/valeran/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["grammar-guard.nvim"] = {
+    loaded = true,
+    path = "/home/valeran/.local/share/nvim/site/pack/packer/start/grammar-guard.nvim",
+    url = "https://github.com/brymer-meneses/grammar-guard.nvim"
+  },
+  ["hex.nvim"] = {
+    loaded = true,
+    path = "/home/valeran/.local/share/nvim/site/pack/packer/start/hex.nvim",
+    url = "https://github.com/RaafatTurki/hex.nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/valeran/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",

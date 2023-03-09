@@ -4,6 +4,7 @@ local servers = {
 	"clangd",
 	"texlab",
   "pyright",
+  "ltex",
 }
 
 local settings = {
@@ -15,6 +16,8 @@ local settings = {
 }
 
 lspconfig = require "lspconfig"
+
+require("grammar-guard").init()
 
 local opts = {}
 
@@ -32,3 +35,5 @@ for _, server in pairs(servers) do
 
 	lspconfig[server].setup(opts)
 end
+
+
