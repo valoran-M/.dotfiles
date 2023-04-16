@@ -67,6 +67,8 @@ return packer.startup(function(use)
 
   -- Colorschemes
   use "Mofiqul/dracula.nvim"
+  use "altercation/vim-colors-solarized"
+  use "ellisonleao/gruvbox.nvim"
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" -- The completion plugin
@@ -80,7 +82,7 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer"
   use "jose-elias-alvarez/null-ls.nvim" -- LSP diagnostics and code actions
-  use "brymer-meneses/grammar-guard.nvim"
+  --[[ use "brymer-meneses/grammar-guard.nvim" ]]
   use "simrat39/rust-tools.nvim"
   use 'folke/trouble.nvim'
 
@@ -107,6 +109,8 @@ return packer.startup(function(use)
   use "JoosepAlviste/nvim-ts-context-commentstring"
 
   use "RaafatTurki/hex.nvim"
+
+  use "vigoux/LanguageTool.nvim"
 
   
   -- Automatically set up your configuration after cloning packer.nvim

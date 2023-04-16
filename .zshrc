@@ -100,6 +100,8 @@ export EDITOR=nvim
 export PATH
 export TERMINAL=konsole
 
+# export OCAMLRUNPARAM=b
+
 # zsh syntax highlighting stuff
 typeset -A ZSH_HIGHLIGHT_STYLES
 ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=magenta,underline'

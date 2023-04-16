@@ -17,7 +17,7 @@ local settings = {
 
 lspconfig = require "lspconfig"
 
-require("grammar-guard").init()
+-- require("grammar-guard").init()
 
 local opts = {}
 

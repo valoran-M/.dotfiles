@@ -27,6 +27,7 @@ vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
 nvim_tree.setup {
+    filesystem_watchers = { enable = false },
     disable_netrw = true,
     hijack_netrw = true,
     hijack_cursor = false,

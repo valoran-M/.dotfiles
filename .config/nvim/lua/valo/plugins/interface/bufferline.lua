@@ -27,17 +27,17 @@ bufferline.setup {
     separator_style = "thin", -- | "thick" | "thin" | { 'any', 'any' },
     enforce_regular_tabs = true,
     always_show_bufferline = true,
-  },
-  highlights = {
-		fill = {
-				fg = { attribute = "fg", highlight = "#ff0000" },
-				bg = { attribute = "bg", highlight = "TabLine" },
-			},
+  }
+  --[[ highlights = { ]]
+		--[[ fill = { ]]
+		--[[ 		fg = { attribute = "fg", highlight = "#ff0000" }, ]]
+		--[[ 		bg = { attribute = "bg", highlight = "TabLine" }, ]]
+		--[[ 	}, ]]
 		--[[ background = { ]]
 		--[[ 		fg = { attribute = "fg", highlight = "TabLine" }, ]]
 		--[[ 		bg = { attribute = "bg", highlight = "TabLine" }, ]]
 		--[[ 	}, ]]
 
-  },
+  --[[ }, ]]
   
 }

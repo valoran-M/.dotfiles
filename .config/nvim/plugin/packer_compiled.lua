@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/valeran/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
+  ["LanguageTool.nvim"] = {
+    loaded = true,
+    path = "/home/valeran/.local/share/nvim/site/pack/packer/start/LanguageTool.nvim",
+    url = "https://github.com/vigoux/LanguageTool.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "/home/valeran/.local/share/nvim/site/pack/packer/start/LuaSnip",
@@ -134,10 +139,10 @@ _G.packer_plugins = {
     path = "/home/valeran/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  ["grammar-guard.nvim"] = {
+  ["gruvbox.nvim"] = {
     loaded = true,
-    path = "/home/valeran/.local/share/nvim/site/pack/packer/start/grammar-guard.nvim",
-    url = "https://github.com/brymer-meneses/grammar-guard.nvim"
+    path = "/home/valeran/.local/share/nvim/site/pack/packer/start/gruvbox.nvim",
+    url = "https://github.com/ellisonleao/gruvbox.nvim"
   },
   ["hex.nvim"] = {
     loaded = true,
@@ -265,6 +270,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/valeran/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
+  },
+  ["vim-colors-solarized"] = {
+    loaded = true,
+    path = "/home/valeran/.local/share/nvim/site/pack/packer/start/vim-colors-solarized",
+    url = "https://github.com/altercation/vim-colors-solarized"
   },
   vimtex = {
     loaded = true,
