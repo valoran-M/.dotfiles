@@ -79,6 +79,11 @@ _G.packer_plugins = {
     path = "/home/valeran/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
+  Coqtail = {
+    loaded = true,
+    path = "/home/valeran/.local/share/nvim/site/pack/packer/start/Coqtail",
+    url = "https://github.com/whonore/Coqtail"
+  },
   ["LanguageTool.nvim"] = {
     loaded = true,
     path = "/home/valeran/.local/share/nvim/site/pack/packer/start/LanguageTool.nvim",

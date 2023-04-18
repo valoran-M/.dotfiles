@@ -86,6 +86,9 @@ return packer.startup(function(use)
   use "simrat39/rust-tools.nvim"
   use 'folke/trouble.nvim'
 
+  -- Ocaml
+  use "whonore/Coqtail"
+
   -- Telescope
   use "nvim-telescope/telescope.nvim"
   use 'nvim-telescope/telescope-media-files.nvim'
