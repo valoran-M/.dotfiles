@@ -5,21 +5,10 @@ local servers = {
 	"texlab",
   "pyright",
   "ltex",
-}
-
-local settings = {
-	ui = {
-		border = "none",
-	},
-	log_level = vim.log.levels.INFO,
-	max_concurrent_installers = 4,
+  "rust_analyzer"
 }
 
 lspconfig = require "lspconfig"
-
--- require("grammar-guard").init()
-
-local opts = {}
 
 for _, server in pairs(servers) do
 	opts = {
@@ -35,5 +24,4 @@ for _, server in pairs(servers) do
 
 	lspconfig[server].setup(opts)
 end
-
 

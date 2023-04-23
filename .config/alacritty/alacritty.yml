@@ -11,14 +11,19 @@ window:
   opacity: 0.8
   
   dimensions:
-    columns: 0
-    lines: 0
+    columns: 130
+    lines: 40
+
+  padding:
+    x: 0
+    y: 0
 
   title: Terminal
 
   startup_mode: Maximized
 
   dynamic_title: true
+  decorations: none
 
 font:
   normal: 
@@ -30,7 +35,7 @@ font:
   italic:
     family: Fira Code
     style: Italic
-  size: 7
+  size: 14
 
 colors:
   primary:
@@ -66,3 +71,6 @@ shell:
 
 selection: 
   dynamic_title: true
+
+key_bindings:
+  - { key: F11, action: ToggleFullscreen }

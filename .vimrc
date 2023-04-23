@@ -52,3 +52,4 @@ if count(s:opam_available_tools,"ocp-indent") == 0
 endif
 " ## end of OPAM user-setup addition for vim / ocp-indent ## keep this line
 
+export WINIT_UNIX_BACKEND=x11

@@ -42,7 +42,7 @@ packer.init {
 return packer.startup(function(use)
   use "wbthomason/packer.nvim" -- Have packer manage itself
   use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+  use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
 
   use "folke/which-key.nvim"
   use "akinsho/toggleterm.nvim"
@@ -82,7 +82,6 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- enable LSP
   use "williamboman/nvim-lsp-installer"
   use "jose-elias-alvarez/null-ls.nvim" -- LSP diagnostics and code actions
-  --[[ use "brymer-meneses/grammar-guard.nvim" ]]
   use "simrat39/rust-tools.nvim"
   use 'folke/trouble.nvim'
 
@@ -110,6 +109,8 @@ return packer.startup(function(use)
   use "p00f/nvim-ts-rainbow"
   use "nvim-treesitter/playground" 
   use "JoosepAlviste/nvim-ts-context-commentstring"
+
+  use "lewis6991/gitsigns.nvim"
 
   use "RaafatTurki/hex.nvim"
 
