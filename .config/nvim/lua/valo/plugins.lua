@@ -65,6 +65,7 @@ lazy.setup({
   "jose-elias-alvarez/null-ls.nvim", -- LSP diagnostics and code actions
   "simrat39/rust-tools.nvim",
   "folke/trouble.nvim",
+  "tomtomjhj/coq-lsp.nvim",
 
   -- Ocaml
   "whonore/Coqtail",

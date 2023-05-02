@@ -3,17 +3,20 @@ local servers = {
 	"ocamllsp",
 	"clangd",
 	"texlab",
-  	"pyright",
-  	"ltex",
-  	"rust_analyzer"
+  "pyright",
+  "ltex",
+  "rust_analyzer"
 }
 
 lspconfig = require "lspconfig"
 
+local on_attach   = require("valo.plugins_config.dev.lsp.handlers").on_attach
+local capabilitie = require("valo.plugins_config.dev.lsp.handlers").capabilities
+
 for _, server in pairs(servers) do
 	opts = {
-		on_attach = require("valo.plugins_config.dev.lsp.handlers").on_attach,
-		capabilities = require("valo.plugins_config.dev.lsp.handlers").capabilities,
+		on_attach = on_attach,
+		capabilities = capabilities,
 	}
 
 	server = vim.split(server, "@")[1]
@@ -25,3 +28,13 @@ for _, server in pairs(servers) do
 	lspconfig[server].setup(opts)
 end
 
+--[[ require("coq-lsp").setup ({ ]]
+--[[   coq_lsp_nvim = { }, ]]
+--[[   lsp = { ]]
+--[[     on_attach = on_attach, ]]
+--[[     capabilities = capabilities, ]]
+--[[     init_options = { ]]
+--[[       show_notices_as_diagnostics = true, ]]
+--[[     }, ]]
+--[[   }, ]]
+--[[ }) ]]

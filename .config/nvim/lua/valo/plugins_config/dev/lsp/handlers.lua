@@ -33,6 +33,8 @@ end
 
 
 local function lsp_keymaps(bufnr)
+  vim.cmd("highlight NormalFloat guibg=bg")
+  vim.cmd("highlight FloatBorder guifg=white guibg=bg")
 	local opts = { noremap = true, silent = true }
 	local keymap = vim.api.nvim_buf_set_keypmap
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "qD",    "<cmd>lua vim.lsp.buf.declaration()<CR>", opts)
@@ -44,8 +46,6 @@ local function lsp_keymaps(bufnr)
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "qr", "<cmd>lua vim.lsp.buf.references()<CR>", opts)
 	vim.api.nvim_buf_set_keymap(bufnr, "n", "[d", '<cmd>lua vim.lsp.goto_prev({ border = "rounded" }=<CR>', opts)
 	
-  vim.cmd("highlight NormalFloat guibg=bg")
-  vim.cmd("highlight FloatBorder guifg=white guibg=bg")
   vim.api.nvim_buf_set_keymap(bufnr, "n", "qn", "<cmd>lua vim.diagnostic.goto_next()<CR>", opts)
   vim.api.nvim_buf_set_keymap(bufnr, "n", "qN", "<cmd>lua vim.diagnostic.goto_prev()<CR>", opts)
   vim.api.nvim_buf_set_keymap(bufnr, "n", "ql", "<cmd>lua vim.diagnostic.open_float()<CR>", opts)
