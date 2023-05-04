@@ -1,0 +1,12 @@
+ignore-empty-password
+font=Ubuntu
+
+indicator-radius=100
+indicator-thickness=20
+indicator-caps-lock
+
+key-hl-color=880033
+
+color=00000099
+separator-color=00000000
+

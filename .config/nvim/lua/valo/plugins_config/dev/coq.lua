@@ -11,11 +11,12 @@ vim.cmd('autocmd FileType coq lua keymapCoq()')
 function keymapCoq()
   vim.keymap.set("i", "<A-Up>",   "<Plug>CoqUndo")
   vim.keymap.set("i", "<A-Down>", "<Plug>CoqNext")
+  vim.keymap.set("i", "<A-Right>","<Plug>CoqToLine")
 
   vim.keymap.set("n", "<A-Down>", "<Plug>CoqNext")
   vim.keymap.set("n", "<A-Up>",   "<Plug>CoqUndo")
+  vim.keymap.set("n", "<A-Right>","<Plug>CoqToLine")
   vim.keymap.set("n", "s", "<Plug>CoqNext")
   vim.keymap.set("n", "S", "<Plug>CoqUndo")
-  vim.keymap.set("n", "L", "<Plug>CoqToLine")
   vim.keymap.set("n", "K", "<Plug>CoqCheck")
 end
