@@ -4,7 +4,7 @@
   min-height: 0;
 }
 
-@import "colors.css";
+@import "gruvbox.css";
 
 #waybar {
   background: transparent;
@@ -20,18 +20,13 @@
 }
 
 #workspaces button {
-  color: @lavender;
+  color: @blue;
   border-radius: 1rem;
   padding: 0.4rem;
 }
 
 #workspaces button.active {
-  color: @sky;
-  border-radius: 1rem;
-}
-
-#workspaces button:hover {
-  color: @sapphire;
+  color: @purple;
   border-radius: 1rem;
 }
 
@@ -40,15 +35,16 @@
 #battery,
 #pulseaudio,
 #backlight,
+#workspaces,
 #custom-lock,
 #custom-power {
-  background-color: @surface0;
-  padding: 0.5rem 1rem;
+  background-color: @bg;
+  padding: 0.2rem 1rem;
   margin: 5px 0;
 }
 
 #clock {
-  color: @blue;
+  color: @fg;
   border-radius: 1rem 1rem 1rem 1rem;
   margin-right: 1rem;
 }
@@ -80,7 +76,7 @@
 }
 
 #pulseaudio.microphone {
-  color: @yellow;
+  color: @orange;
   border-radius: 0px 0px 0px 0px;
 }
 
@@ -97,12 +93,12 @@
 #custom-power {
     margin-right: 1rem;
     border-radius: 1rem 1rem 1rem 1rem;
-    color: @red;
+    color: @white;
 }
 
 #custom-spotify {
     margin-left: 1cm;
-    color: @sky;
+    color: @aqua;
 }
 
 #tray {

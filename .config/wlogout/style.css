@@ -3,12 +3,12 @@
 }
 
 window {
-	background-color: rgba(17, 17, 27, 0.85);
+	background-color: rgba(28, 28, 28, 0.85);
 }
 
 button {
     color: #b4befe;
-	background-color: #313244;
+	background-color: #282828;
 	outline-style: none;
 	border: none;
 	border-width: 0px;
@@ -22,12 +22,12 @@ button {
 }
 
 button:focus {
-	background-color: #cba6f7;
+	background-color: #98971a;
 	background-size: 20%;
 }
 
 button:hover#lock {
-	background-color: #f5c2e7;
+	background-color: #98971a;
 	background-size: 25%;
 	margin-right : 30px;
 	margin-bottom : 30px;
@@ -37,7 +37,7 @@ button:hover#lock {
 }
 
 button:hover#logout {
-	background-color: #f5c2e7;
+	background-color: #98971a;
 	background-size: 25%;
 	margin-right : 30px;
 	margin-top : 30px;
@@ -47,7 +47,7 @@ button:hover#logout {
 }
 
 button:hover#shutdown {
-	background-color: #f5c2e7;
+	background-color: #98971a;
 	background-size: 25%;
 	margin-left : 20px;
 	margin-bottom : 30px;
@@ -57,7 +57,7 @@ button:hover#shutdown {
 }
 
 button:hover#reboot {
-	background-color: #f5c2e7;
+	background-color: #98971a;
 	background-size: 25%;
 	margin-left : 30px;
 	margin-top : 30px;
