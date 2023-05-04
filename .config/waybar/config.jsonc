@@ -1,0 +1,98 @@
+{
+    "height": 28,
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "layer": "top",
+    "modules-left": ["wlr/workspaces", "custom/spotify"],
+    "modules-center": ["clock"],
+    "modules-right": 
+      [ "pulseaudio",
+        "pulseaudio#microphone",
+        "backlight",
+        "battery",
+        "tray",
+        "custom/power"],
+
+
+// left
+
+   "wlr/workspaces": {
+       "disable-scroll": true,
+       "all-outputs": true,
+       "on-click": "activate",
+       "format": "{icon}",
+       "format-icons": {
+          "default": "●"
+       }
+   },
+
+  "custom/spotify": {
+        "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
+        "format": " {}",
+        "return-type": "json",
+        "on-click": "playerctl play-pause",
+        "on-double-click-right": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+    },
+
+
+// center //
+
+    "clock": {
+        "format": "{: %H:%M %p 󰃭 %a %d}",
+        "tooltip-format": "<tt><big>{calendar}</big></tt>"
+    },
+
+
+// right modules //
+
+    "pulseaudio": {
+        "format": " {icon}",
+        "format-muted": "婢",
+        "on-click": "pavucontrol -t 3",
+        "scroll-step": 5,
+        "tooltip": true,
+        "tooltip-format": "{icon}  {volume}%",
+        "format-icons": {
+            "headphone": "",
+            "headset": "",
+            "default": ["", "", ""]
+        }
+    },
+
+    "pulseaudio#microphone": {
+        "format": "",
+        "format-source-muted": "",
+        "on-click": "pavucontrol -t 4",
+        "on-click-middle": "pamixer --default-source -t",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        "tooltip": false,
+        "scroll-step": 5
+    },
+
+    "backlight": {
+      "device": "intel_backlight",
+      "format": "{icon}",
+      "tooltip-format": "{icon} {percent}% ",
+      "format-icons": ["", ""]
+    },
+
+    "battery": {
+        "format": "{icon}  {capacity}%",
+        "tooltip": true,
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "tray": {
+        "icon-size": 15,
+        "spacing": 5
+    },
+
+    "custom/power": {
+        "format": "",
+        "on-click": "wlogout -b 2",
+        "tooltip": false
+    }
+}
