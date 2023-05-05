@@ -1,13 +1,13 @@
 daemonize
 show-failed-attempts
 ignore-empty-password
-font=Ubuntu
+font="Fira Code"
+
+image=~/Pictures/wallpaper/sway.png
 
 clock
 timestr=%R
 datestr=%a, %e of %B
-
-screenshots
 
 fade-in=0.2
 
