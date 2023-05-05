@@ -46,7 +46,7 @@ inputbar {
 }
 entry {
     orientation:                 horizontal;
-    enabled:                     true;
+    enabled:                     false;
 }
 
 
