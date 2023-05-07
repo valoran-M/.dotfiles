@@ -1,144 +1,177 @@
 // Config //
 configuration {
-	modi:                        "drun,filebrowser,window,run";
-	show-icons:                  true;
-	display-drun:                "";
-	display-run:                 "";
-	display-filebrowser:         "";
-	display-window:              "";
-	drun-display-format:         "{name}";
-	window-format:               "{w}{t}";
-	font:                        "JetBrainsMono Nerd Font 10";
-	icon-theme:                  "Tela-circle-dracula-dark";
+	modi:                       "drun,window,filebrowser";
+	show-icons:                 true;
+  display-drun:               " ";
+  display-window:             " ";
+	display-filebrowser:        " ";
+	drun-display-format:        "{name}";
+	window-format:              "{w} · {c} · {t}";
+	font:                       "JetBrains Mono Nerd Font 10";
+	icon-theme:                 "Tela-circle-dracula-dark";
 }
 
-@theme "~/.config/rofi/theme.rasi"
+* {
+  highlight: bold;
+  separatorcolor: transparent;
+  border-color:   transparent;
 
+  foreground: #FBF1C7FF; //Text
+  background: #282828E6;
+  background-alt: #D79921FF;
 
-// Main //
-window {
-    transparency:                "real";
-    fullscreen:                  false;
-    enabled:                     true;
-    cursor:                      "default";
-    spacing:                     0px;
-    padding:                     0px;
-    border:                      2px;
-    border-radius:               40px;
-    border-color:                #a89984ff;
-    background-color:            transparent;
+	normal-background:  @background;
+  urgent-background:  #D65D0ECC; //Maroon
+	active-background:  #665C54CC; //Teal
+
+	selected-normal-background:  #D79921FF; //Lavender
+	selected-urgent-background:  #D79921FF; //Teal
+	selected-active-background:  #D79921FF; //Maroon
+
+  alternate-normal-background: @normal-background;
+	alternate-urgent-background: @urgent-background;
+	alternate-active-background: @active-background;
 }
+
+/* --- Main Box --- */
+
 mainbox {
-    enabled:                     true;
-    spacing:                     0px;
-    orientation:                 horizontal;
-    children:                    [  "inputbar" , "listbox" ];
-    background-color:            transparent;
+  orientation: vertical;
+  width:       600px;
+  children:    [inputbar, listview];
 }
 
+/* --- Input Bar --- */
 
-// Inputs //
 inputbar {
-  enabled:                     true;
-  width:                       3%;
-	children:                    [ "mode-switcher" , "entry" ];
-	background-color:            @selected-active-background;
+  orientation:  horizontal;
+  spacing:      10px;
+  children:     [textbox-prompt-colon, entry, dummy, mode-switcher];
 }
+
 entry {
-    orientation:                 horizontal;
-    enabled:                     false;
+  width:            150px;
+  border-radius:    12px;
+  spacing:          10px;
+  padding:          12px 16px;
+  placeholder:      "Search";
+  background-color: @background;
 }
 
+textbox-prompt-colon {
+  str:              " ";
+  enabled:          true;
+  expand:           false;
+  enabled:          true;
+  border-radius:    12px;
+  padding:          12px 12px;
+  background-color: @background;
+}
 
-// Modes //
+dummy {
+  expand:           true;
+  background-color: transparent;
+}
+
+/* --- Mode Switcher --- */
+
 mode-switcher{
-    orientation:                 vertical;
-    enabled:                     true;
-    spacing:                     0px;
-    width:                       2.5%;
-    padding:                     160px 10px 160px 10px;
-    spacing:                     25px;
-    background-color:            transparent;
+  enabled:  true;
+  spacing:  10px;
 }
+
 button {
-    cursor:                      pointer;
-    border-radius:               50px;
-    background-color:            @background;
-    text-color:                  @foreground;
+  width:            40px;
+  padding:          12px;
+  border-radius:    12px;
+  background-color: @background;
 }
+
 button selected {
-    background-color:            @background;
-    text-color:                  @urgent-background;
 }
 
+/* --- List view --- */
 
-// Lists //
-listbox {
-    spacing:                     10px;
-    padding:                     30px;
-	children:                    [ "listview" ];
-	background-color:            @background;
-}
 listview {
-    enabled:                     true;
-    columns:                     1;
-    cycle:                       true;
-    dynamic:                     true;
-    scrollbar:                   false;
-    layout:                      vertical;
-    reverse:                     false;
-    fixed-height:                true;
-    fixed-columns:               true;
-    cursor:                      "default";
-	  background-color:            transparent;
-    text-color:                  @foreground;
+  enabled:    true;
+  columns:    1;
+  lines:      5;
+  cycle:      true;
+  dynamic:    true;
+  scrollbar:  true;
+    
+  spacing:          10px;
+  background-color: transparent;
+  background-color: @background;
+  cursor:           "default";
 }
 
+/* --- Element --- */
 
-// Elements //
 element {
-    enabled:                     true;
-    spacing:                     30px;
-    padding:                     8px;
-    border-radius:               20px;
-    cursor:                      pointer;
-    background-color:            transparent;
-    text-color:                  @foreground;
+  enabled:        true;
+  spacing:        30px;
+  padding:        8px;
+  border-radius:  20px;
+  cursor:         pointer;
+
+  background-color: @background;
+  text-color:       @foreground;
 }
+
+element-text {
+  vertical-align:   0.5;
+  horizontal-align: 0.0;
+  cursor:           inherit;
+  background-color: transparent;
+  text-color:       inherit;
+}
+
+element-icon {
+  size:     48;
+  padding:  0 10 0 0;
+
+  background-color: transparent;
+  text-color:       inherit;
+}
+
 element normal.normal {
-    background-color:            transparent;
-    text-color:                  @normal-foreground;
+  background-color: transparent;
+  text-color:       @normal-foreground;
 }
 element normal.urgent {
-    background-color:            @urgent-background;
-    text-color:                  @urgent-foreground;
+  background-color: @urgent-background;
+  text-color:       @urgent-foreground;
 }
 element normal.active {
-    background-color:            @active-background;
-    text-color:                  @active-foreground;
+  background-color: @active-background;
+  text-color:       @active-foreground;
 }
+
 element selected.normal {
-    background-color:            @selected-normal-background;
-    text-color:                  @selected-normal-foreground;
+  background-color: @selected-normal-background;
+  text-color:       @selected-normal-foreground;
 }
 element selected.urgent {
-    background-color:            @selected-urgent-background;
-    text-color:                  @selected-urgent-foreground;
+  background-color: @selected-urgent-background;
+  text-color:       @selected-urgent-foreground;
 }
 element selected.active {
-    background-color:            @selected-active-background;
-    text-color:                  @selected-active-foreground;
+  background-color: @selected-active-background;
+  text-color:       @selected-active-foreground;
 }
-element-icon {
-    size:                        48px;
-    cursor:                      inherit;
-    background-color:            transparent;
-    text-color:                  inherit;
+
+element.alternate.normal {
+    background-color: @alternate-normal-background;
+    text-color:       @alternate-normal-foreground;
 }
-element-text {
-    vertical-align:              0.5;
-    horizontal-align:            0.0;
-    cursor:                      inherit;
-    background-color:            transparent;
-    text-color:                  inherit;
+
+element.alternate.urgent {
+    background-color: @alternate-urgent-background;
+    text-color:       @alternate-urgent-foreground;
+}
+
+element.alternate.active {
+    background-color: @alternate-active-background;
+    text-color:       @alternate-active-foreground;
 }
