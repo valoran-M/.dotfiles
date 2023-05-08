@@ -93,5 +93,6 @@ lazy.setup({
   "RaafatTurki/hex.nvim",
 
   "vigoux/LanguageTool.nvim",
+  "toppair/peek.nvim",
   "Fymyte/rasi.vim",
 })
