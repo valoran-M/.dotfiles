@@ -3,7 +3,7 @@ local indent_blankline = require("indent_blankline")
 vim.g.indentLine_enabled = 1
 vim.g.indent_blankline_show_trailing_blankline_indent = true
 vim.g.indent_blankline_show_first_indent_level = true
-vim.g.indent_blankline_use_treesitter = true
+vim.g.indent_blankline_use_treesitter = false
 vim.g.indent_blankline_show_current_context = true
 vim.g.indent_blankline_context_patterns = {
 	"class",
@@ -27,20 +27,17 @@ vim.g.indent_blankline_context_patterns = {
 	"operation_type",
 }
 
+vim.g.indent_blankline_context_char = "▏"
 vim.g.indent_blankline_char = "▏"
-
-vim.cmd [[
-  highlight IndentBlanklineIndent1 guifg=#2E3442 gui=nocombine
-]] 
 
 indent_blankline.setup({
   space_char_blankline = " ",
   char_highlight_list = {
-        "IndentBlanklineIndent1",
-    },
-    space_char_highlight_list = {
-        "IndentBlanklineIndent1",
-    },
+        "IndentBlanklineIndent",
+  },
+  space_char_highlight_list = {
+      "IndentBlanklineIndent",
+  },
   show_current_context = true,
   show_current_context_start = true,
 })
