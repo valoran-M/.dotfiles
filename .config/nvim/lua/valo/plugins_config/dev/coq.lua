@@ -19,4 +19,6 @@ function keymapCoq()
   vim.keymap.set("n", "s", "<Plug>CoqNext")
   vim.keymap.set("n", "S", "<Plug>CoqUndo")
   vim.keymap.set("n", "K", "<Plug>CoqCheck")
+
+  vim.keymap.set("n", "<A-c>", "<Plug>CoqStop")
 end

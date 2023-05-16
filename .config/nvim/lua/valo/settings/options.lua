@@ -36,7 +36,15 @@ local options = {
   ruler         = false,
   laststatus    = 3,
   whichwrap     = "bs<>[]",
+  textwidth     = 80,
+  colorcolumn   = "+1",
+  relativenumber= true,
 }
+
+vim.wo.winfixwidth = true
+vim.wo.linebreak = true
+vim.wo.number = true
+vim.wo.list = false
 
 for k, v in pairs(options) do 
   vim.opt[k] = v

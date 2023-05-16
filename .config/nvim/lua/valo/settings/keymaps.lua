@@ -37,6 +37,8 @@ keymap("n", "<A-l>", ":bnext<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==", opts)
 
+
+vim.keymap.set("n", "<esc><esc>", vim.cmd.nohlsearch, { desc = "[esc] hlsearch" })
 --save with Ctrl+s 
 keymap("n", "<C-s>", ":w<CR>", opts)
 
@@ -53,6 +55,7 @@ keymap("n", "<leader>xl", "<cmd>TroubleToggle loclist<cr>", opts)
 keymap("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>", opts)
 
 -- Insert --
+keymap("i", "jk", "<esc>", opts)
 -- save with Ctrl+s
 keymap("i", "<C-s>", "<ESC>:w<CR>a", opts)
 -- Press jk fast to enter
@@ -64,5 +67,6 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 -- Move text up and down
-keymap("v", "<A-j>", ":m .+1<CR>==", opts)
-keymap("v", "<A-k>", ":m .-2<CR>==", opts)
+-- Visual --
+keymap("v", "<A-j>", ":m '>+1<cr>gv=gv", { desc = "" })
+keymap("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "" })

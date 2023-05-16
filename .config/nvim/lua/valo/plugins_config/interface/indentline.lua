@@ -29,9 +29,6 @@ vim.g.indent_blankline_context_patterns = {
 
 vim.g.indent_blankline_char = "▏"
 
--- HACK: work-around for https://github.com/lukas-reineke/indent-blankline.nvim/issues/59
-vim.wo.colorcolumn = "99999"
-
 vim.cmd [[
   highlight IndentBlanklineIndent1 guifg=#2E3442 gui=nocombine
 ]] 

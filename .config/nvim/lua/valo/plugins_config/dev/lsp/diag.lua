@@ -12,10 +12,10 @@ for type, icon in pairs(signs) do
 end
 
 vim.cmd [[
-  highlight! DiagnosticSignError guibg=bg guifg=#FF0000 gui=bold
-  highlight! DiagnosticSignWarn  guibg=bg guifg=#FFA500 gui=bold
-  highlight! DiagnosticSignInfo  guibg=bg guifg=#00FFFF gui=bold
-  highlight! DiagnosticSignHint  guibg=bg guifg=#0000FF gui=bold
+  highlight! DiagnosticSignError guibg=bg guifg=#CC241D gui=bold
+  highlight! DiagnosticSignWarn  guibg=bg guifg=#D79921 gui=bold
+  highlight! DiagnosticSignInfo  guibg=bg guifg=#458588 gui=bold
+  highlight! DiagnosticSignHint  guibg=bg guifg=#458588 gui=bold
 ]]
 
 vim.diagnostic.config {
