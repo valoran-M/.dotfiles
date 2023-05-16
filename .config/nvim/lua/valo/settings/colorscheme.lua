@@ -1,3 +1,5 @@
 local colorscheme = "gruvbox"
 
-vim.cmd("colorscheme " .. colorscheme)
+vim.cmd.colorscheme(colorscheme)
+
+

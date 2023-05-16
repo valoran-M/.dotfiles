@@ -4,7 +4,7 @@
   min-height: 0;
 }
 
-@import "gruvbox.css";
+@import "theme.css";
 
 #waybar {
   background: transparent;
@@ -94,6 +94,12 @@
     margin-right: 1rem;
     border-radius: 1rem 1rem 1rem 1rem;
     color: @white;
+}
+
+#custom-theme {
+    margin-right: 1rem;
+    border-radius: 1rem 1rem 1rem 1rem;
+    color: @fg;
 }
 
 #custom-spotify {

@@ -1,5 +1,5 @@
 {
-    "height": 10,
+    "height": 5,
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
@@ -12,7 +12,8 @@
         "backlight",
         "battery",
         "tray",
-        "custom/power"],
+        "custom/theme",
+        "custom/power" ],
 
 
 // left
@@ -23,18 +24,20 @@
        "on-click": "activate",
        "format": "{icon}",
        "format-icons": {
+          "5": " ",
+          "6": "󰙯 ",
           "default": "●"
        }
    },
 
   "custom/spotify": {
-        "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
-        "format": " {}",
-        "return-type": "json",
-        "on-click": "playerctl play-pause",
-        "on-double-click-right": "playerctl next",
-        "on-scroll-down": "playerctl previous",
-    },
+    "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
+    "format": " {}",
+    "return-type": "json",
+    "on-click": "playerctl play-pause",
+    "on-double-click-right": "playerctl next",
+    "on-scroll-down": "playerctl previous"
+  },
 
 
 // center //
@@ -94,5 +97,10 @@
         "format": "",
         "on-click": "wlogout -b 2",
         "tooltip": false
-    }
+    },
+
+    "custom/theme": {
+      "format": "󰈈 ",
+      "on-click": "bash ~/.config/waybar/scripts/theme.sh"
+  }
 }
