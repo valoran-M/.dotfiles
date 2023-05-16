@@ -11,13 +11,6 @@ for type, icon in pairs(signs) do
     vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
 end
 
-vim.cmd [[
-  highlight! DiagnosticSignError guibg=bg guifg=#CC241D gui=bold
-  highlight! DiagnosticSignWarn  guibg=bg guifg=#D79921 gui=bold
-  highlight! DiagnosticSignInfo  guibg=bg guifg=#458588 gui=bold
-  highlight! DiagnosticSignHint  guibg=bg guifg=#458588 gui=bold
-]]
-
 vim.diagnostic.config {
 		virtual_text = false,
 		signs = {

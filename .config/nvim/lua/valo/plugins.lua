@@ -48,7 +48,7 @@ lazy.setup({
   -- Colorschemes
   "Mofiqul/dracula.nvim",
   "altercation/vim-colors-solarized",
-  "ellisonleao/gruvbox.nvim",
+  "valoran-M/gruvbox.nvim",
   "loctvl842/monokai-pro.nvim",
 
   -- cmp plugins

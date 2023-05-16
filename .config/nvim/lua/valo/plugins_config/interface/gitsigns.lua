@@ -1,9 +1,3 @@
-vim.cmd [[
-  highlight! GitSignsAdd    guibg=bg guifg=#98971A gui=bold
-  highlight! GitSignsChange guibg=bg guifg=#458588 gui=bold
-  highlight! GitSignsDelete guibg=bg guifg=#CC241D gui=bold
-]]
-
 require('gitsigns').setup {
   signs = {
     add =          { hl = "GitSignsAdd",    text = "▎",  numhl = "GitSignsAddNr",    linehl = "GitSignsAddLn" },
