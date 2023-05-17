@@ -22,4 +22,5 @@ sleep 2
 
 killall -SIGUSR2 waybar
 killall -SIGUSR1 kitty
+killall -SIGUSR1 nvim
 
