@@ -175,3 +175,4 @@ nvim_tree.setup {
         }
     }
 }
+

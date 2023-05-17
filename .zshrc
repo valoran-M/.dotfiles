@@ -117,3 +117,10 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # opam configuration
 [[ ! -r /home/valeran/.opam/opam-init/init.zsh ]] || source /home/valeran/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+
+THEME=$(readlink -f ~/.config/waybar/theme.css | cut -d '/' -f6)
+if [ $THEME = "light.css" ]; then
+  export THEME="light"
+else
+  export THEME="dark"
+fi
