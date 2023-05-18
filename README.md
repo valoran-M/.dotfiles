@@ -4,15 +4,6 @@ Hi, this is my directory containing my configuration files.
 I'm a big fan of the [gruvbox](https://github.com/morhetz/gruvbox)
 theme, so I put it everywhere.
 
-<p align="center"> 
-    <img alt="Twitter Follow" src=".dotfiles/gruvbox.png"
-        style="vertical-align:center,margin-right: 1cm" height="50"/>
-    <img alt="Twitter Follow" src=".dotfiles/hyprland.png"
-        style="vertical-align:center,margin-right: 1cm" height="50"/>
-    <img alt="Made with Lua" src=".dotfiles/nvim.png" 
-        style="vertical-align:center" height="50"/>
-</p>
-
 ## Preview
 
 ## Aplications
