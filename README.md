@@ -8,10 +8,14 @@ theme, so I put it everywhere.
 
 ## Aplications
 
+I am on archlinux and use pacman and yay as package manager
+
 ### User Interface
 
 1. [hyperland](https://hyprland.org/) - dynamic tiling Wayland 
     compositor
+1. [swww](https://github.com/Horus645/swww) - A simple wayland 
+    wallpaper setter
 1. [waybar](https://github.com/Alexays/Waybar) - Highly customizable 
     Wayland bar
 1. [roffi](https://github.com/lbonn/rofi) - A window switcher, Application 
@@ -22,6 +26,17 @@ theme, so I put it everywhere.
     lightweight notification daemon.
 1. [swaylock effect](https://github.com/mortie/swaylock-effects) - waylock is a 
     screen locking utility for Wayland compositors.
+1. [pavucontrol](https://freedesktop.org/software/pulseaudio/pavucontrol/) - 
+    PulseAudio Volume Control
+1. [nm-applet](https://gitlab.gnome.org/GNOME/network-manager-applet) - Network 
+    Manager tray icon and utility
+
+### office
+
+1. [nemo](https://github.com/linuxmint/nemo) - File Manager
+1. [imv](https://github.com/eXeC64/imv) - Image viewer for X11 and Wayland
+1. [gim](https://github.com/snapcrafters/gimp) - The Free & Open Source Image Editor
+1. [thunderbird](https://www.thunderbird.net/) - Email client
 
 ### Utils
 
@@ -30,6 +45,9 @@ theme, so I put it everywhere.
     Vim-based text editor ([nvim config](.config/nvim))
 1. [kitty](https://github.com/kovidgoyal/kitty) - the fast, 
     feature-rich, cross-platform, GPU based terminal
+1. [discord](https://discord.com/) - 
+1. [spotify](https://www.spotify.com/) -
+1. [firefox](https://www.mozilla.org/) -
 
 ## Inspiration
 
