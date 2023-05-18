@@ -2,7 +2,16 @@
 
 Hi, this is my directory containing my configuration files. 
 I'm a big fan of the [gruvbox](https://github.com/morhetz/gruvbox)
-theme, so I put it everywhere
+theme, so I put it everywhere.
+
+<p align="center"> 
+    <img alt="Twitter Follow" src=".dotfiles/gruvbox.png"
+        style="vertical-align:center,margin-right: 1cm" height="50"/>
+    <img alt="Twitter Follow" src=".dotfiles/hyprland.png"
+        style="vertical-align:center,margin-right: 1cm" height="50"/>
+    <img alt="Made with Lua" src=".dotfiles/nvim.png" 
+        style="vertical-align:center" height="50"/>
+</p>
 
 ## Preview
 
@@ -18,8 +27,12 @@ theme, so I put it everywhere
     launcher and dmenu replacement. (Wayland fork)
 1. [wdisplays](https://github.com/luispabon/wdisplays) - wdisplays is a graphical 
     application for configuring displays in Wayland compositors.
+1. [dunst](https://github.com/dunst-project/dunst) - A highly configurable and 
+    lightweight notification daemon.
+1. [swaylock effect](https://github.com/mortie/swaylock-effects) - waylock is a 
+    screen locking utility for Wayland compositors.
 
-### Other
+### Utils
 
 1. [zsh](https://github.com/zsh-users/zsh) - Z shell
 1. [nvim](https://github.com/neovim/neovim) - hyperextensible 
