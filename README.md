@@ -6,6 +6,15 @@ theme, so I put it everywhere.
 
 ## Preview
 
+![wall dark](.dotfiles/wall_dark.png)
+![wall light](.dotfiles/wall_light.png)
+
+![porn dark](.dotfiles/porn-dark.png)
+![porn light](.dotfiles/porn-light.png)
+
+![nvim](.dotfiles/nvim.png)
+
+
 ## Aplications
 
 I am on archlinux and use pacman and yay as package manager

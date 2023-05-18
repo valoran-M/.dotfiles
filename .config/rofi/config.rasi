@@ -13,28 +13,6 @@ configuration {
 
 @import "theme.rasi"
 
-// * {
-//   highlight: bold;
-//   separatorcolor: transparent;
-//   border-color:   transparent;
-//
-//   foreground: #FBF1C7FF; //Text
-//   background: #282828CC;
-//   background-alt: #D79921CC;
-//
-// 	normal-background:  @background;
-//   urgent-background:  #D65D0ECC; //Maroon
-// 	active-background:  #665C54CC; //Teal
-//
-// 	selected-normal-background:  #458588FF; //Lavender
-// 	selected-urgent-background:  #458588FF; //Teal
-// 	selected-active-background:  #458588FF; //Maroon
-//
-//   alternate-normal-background: @normal-background;
-// 	alternate-urgent-background: @urgent-background;
-// 	alternate-active-background: @active-background;
-// }
-
 /* --- Main Box --- */
 
 mainbox {
