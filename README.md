@@ -37,6 +37,9 @@ I am on archlinux and use pacman and yay as package manager
 1. [imv](https://github.com/eXeC64/imv) - Image viewer for X11 and Wayland
 1. [gim](https://github.com/snapcrafters/gimp) - The Free & Open Source Image Editor
 1. [thunderbird](https://www.thunderbird.net/) - Email client
+1. [discord](https://discord.com/) - 
+1. [spotify](https://www.spotify.com/) -
+1. [firefox](https://www.mozilla.org/) -
 
 ### Utils
 
@@ -45,9 +48,6 @@ I am on archlinux and use pacman and yay as package manager
     Vim-based text editor ([nvim config](.config/nvim))
 1. [kitty](https://github.com/kovidgoyal/kitty) - the fast, 
     feature-rich, cross-platform, GPU based terminal
-1. [discord](https://discord.com/) - 
-1. [spotify](https://www.spotify.com/) -
-1. [firefox](https://www.mozilla.org/) -
 
 ## Inspiration
 
@@ -62,7 +62,7 @@ I am on archlinux and use pacman and yay as package manager
 Thanks to:
 
 * [gurvan.dev](https://gitlab.com/Gurvan.dev) - For encouraging me at
-    the very beginning to switch to neovim
+    the beginning to switch to neovim
 * [josuemoreau](https://github.com/josuemoreau) - For finally motivating
     me to switch to hyprland
 * [paulpatault](https://github.com/paulpatault) - To help me with neovim
