@@ -82,6 +82,7 @@ lazy.setup({
   "nvim-treesitter/playground", 
   "JoosepAlviste/nvim-ts-context-commentstring",
 
+  "mbbill/undotree",
 
   "RaafatTurki/hex.nvim",
 

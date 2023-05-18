@@ -47,6 +47,8 @@ keymap("n", "<C-i>", ":Format<CR>", opts)
 -- Nvimtree
 keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
+keymap('n', '<leader>u', ":UndotreeToggle<cr>", opts)
+
 --trouble
 keymap("n", "<leader>xx", "<cmd>TroubleToggle<cr>", opts)
 keymap("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>", opts)

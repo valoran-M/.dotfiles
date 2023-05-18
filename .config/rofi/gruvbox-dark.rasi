@@ -28,11 +28,17 @@
     gruvbox-dark-yellow-light: #fabd2f;
     gruvbox-dark-gray:         #a89984;
 
+    /* power menu */
+    urgent:                      #458588;
+    active:                      #458588;
+    selected:                    #b16286;
+    background-alt:              #689d6a;
+
     /* Theme colors */
     background:                  @gruvbox-dark-bg0;
     background-color:            @background;
     foreground:                  @gruvbox-dark-fg1;
-    border-color:                @transparent;
+    border-color:                transparent;
     separatorcolor:              @border-color;
     scrollbar-handle:            @border-color;
 
@@ -58,4 +64,4 @@
     selected-urgent-foreground:  @urgent-foreground;
 }
 
-@import "gruvbox-common.rasi"
+@import "~/.config/rofi/gruvbox-common.rasi"
