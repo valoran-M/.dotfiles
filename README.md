@@ -23,7 +23,7 @@ theme, so I put it everywhere
 
 1. [zsh](https://github.com/zsh-users/zsh) - Z shell
 1. [nvim](https://github.com/neovim/neovim) - hyperextensible 
-    Vim-based text editor ([nvim config](./config/nvim))
+    Vim-based text editor ([nvim config](.config/nvim))
 1. [kitty](https://github.com/kovidgoyal/kitty) - the fast, 
     feature-rich, cross-platform, GPU based terminal
 
