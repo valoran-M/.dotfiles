@@ -14,12 +14,12 @@ uptime="`uptime -p | sed -e 's/up //g'`"
 host=`hostname`
 
 # Options
-hibernate='󰏦 '
-shutdown='󰐥 '
-reboot=' '
-lock=' '
-suspend=' '
-logout='󰗼 '
+hibernate='󰏦'
+shutdown='󰤆'
+reboot=''
+lock=''
+suspend=''
+logout='󰗼'
 
 DIR="~/.config/rofi/power_menu/"
 
