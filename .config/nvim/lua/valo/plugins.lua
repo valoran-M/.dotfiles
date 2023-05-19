@@ -28,7 +28,7 @@ lazy.setup({
   "windwp/nvim-autopairs", -- Autopairs, integrates with both cmp and treesitter
   "mhartington/formatter.nvim",
   "lewis6991/gitsigns.nvim",
-  
+
   -- interface
   "goolord/alpha-nvim",
   "kyazdani42/nvim-web-devicons",
@@ -77,9 +77,9 @@ lazy.setup({
 
   -- Treesitter
   "nvim-treesitter/nvim-treesitter",
-  
+
   "p00f/nvim-ts-rainbow",
-  "nvim-treesitter/playground", 
+  "nvim-treesitter/playground",
   "JoosepAlviste/nvim-ts-context-commentstring",
 
   "mbbill/undotree",

@@ -1,5 +1,5 @@
 local servers = {
-  --[[ "sumneko_lua", ]]
+  "lua_ls",
 	"ocamllsp",
 	"clangd",
 	"texlab",
@@ -8,23 +8,22 @@ local servers = {
   "rust_analyzer"
 }
 
-lspconfig = require "lspconfig"
+require("nvim-lsp-installer").setup {}
+
+local lspconfig = require "lspconfig"
 
 local on_attach   = require("valo.plugins_config.dev.lsp.handlers").on_attach
-local capabilitie = require("valo.plugins_config.dev.lsp.handlers").capabilities
+local capa = require("valo.plugins_config.dev.lsp.handlers").capabilities
 
 for _, server in pairs(servers) do
-	opts = {
+	local opts = {
 		on_attach = on_attach,
-		capabilities = capabilities,
+		capabilities = capa,
 	}
 
 	server = vim.split(server, "@")[1]
-
-	confopts = require("valo.plugins_config.dev.lsp.settings." .. server)
-	
+	local confopts = require("valo.plugins_config.dev.lsp.settings." .. server)
   opts = vim.tbl_deep_extend("force", confopts, opts)
-
 	lspconfig[server].setup(opts)
 end
 

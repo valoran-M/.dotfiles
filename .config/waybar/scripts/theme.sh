@@ -19,7 +19,10 @@ ln -sf ~/.config/hypr/pacman-$SWITCHTO.png ~/.config/hypr/wallpaper.png
 ln -sf ~/.config/kitty/gruvbox-$SWITCHTO.conf ~/.config/kitty/style.conf
 ln -sf ~/.config/rofi/gruvbox-$SWITCHTO.rasi ~/.config/rofi/theme.rasi
 
-swww img ~/.config/hypr/wallpaper.png --transition-type center --transition-duration 0.2 --transition-fps 60
+swww img ~/.config/hypr/wallpaper.png \
+      --transition-type center \
+      --transition-duration 0.2 \
+      --transition-fps 120
 
 # sleep 2
 

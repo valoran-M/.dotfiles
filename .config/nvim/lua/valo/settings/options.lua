@@ -41,6 +41,9 @@ local options = {
   relativenumber= true,
 }
 
+vim.g.loaded_ruby_provider = 0
+vim.g.loaded_perl_provider = 0
+
 vim.wo.winfixwidth = true
 vim.wo.linebreak = true
 vim.wo.number = true

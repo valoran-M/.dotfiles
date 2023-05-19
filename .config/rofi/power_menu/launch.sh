@@ -9,6 +9,7 @@
 set -ex
 
 # CMDs
+lastlogin="`last $USER | head -n1 | cut -d ' ' -f1`"
 uptime="`uptime -p | sed -e 's/up //g'`"
 host=`hostname`
 
@@ -31,7 +32,7 @@ rofi_cmd() {
 }
 
 run_rofi() {
-	echo -e "$lock\n$suspend\n$logout\n$hibernate\n$reboot\n$shutdown" | rofi_cmd
+	echo -e "$lock\n$shutdown\n$logout\n$suspend\n$reboot\n$hibernate" | rofi_cmd
 }
 
 # Actions
@@ -50,7 +51,7 @@ case ${chosen} in
 		swaylock
         ;;
     $suspend)
-		swaylock
+		systemctl suspend
         ;;
     $logout)
 		hyprctl dispatch exit 0
