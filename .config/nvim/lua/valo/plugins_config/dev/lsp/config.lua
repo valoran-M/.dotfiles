@@ -13,16 +13,16 @@ require("nvim-lsp-installer").setup {}
 local lspconfig = require "lspconfig"
 
 local on_attach   = require("valo.plugins_config.dev.lsp.handlers").on_attach
-local capa = require("valo.plugins_config.dev.lsp.handlers").capabilities
+local capabilities = require("valo.plugins_config.dev.lsp.handlers").capabilities
 
 for _, server in pairs(servers) do
-	local opts = {
+	opts = {
 		on_attach = on_attach,
-		capabilities = capa,
+		capabilities = capabilities,
 	}
 
 	server = vim.split(server, "@")[1]
-	local confopts = require("valo.plugins_config.dev.lsp.settings." .. server)
+	confopts = require("valo.plugins_config.dev.lsp.settings." .. server)
   opts = vim.tbl_deep_extend("force", confopts, opts)
 	lspconfig[server].setup(opts)
 end

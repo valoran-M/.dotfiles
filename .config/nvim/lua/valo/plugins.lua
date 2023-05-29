@@ -74,6 +74,7 @@ lazy.setup({
   --Latex
   "lervag/vimtex",
   "peterbjorgensen/sved",
+  "machakann/vim-sandwich",
 
   -- Treesitter
   "nvim-treesitter/nvim-treesitter",
@@ -83,6 +84,7 @@ lazy.setup({
   "JoosepAlviste/nvim-ts-context-commentstring",
 
   "mbbill/undotree",
+  "chentoast/marks.nvim",
 
   "RaafatTurki/hex.nvim",
 

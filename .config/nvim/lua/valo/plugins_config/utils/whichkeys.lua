@@ -82,17 +82,28 @@ local mappings = {
     "<cmd>lua require('telescope.builtin').buffers(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Buffers",
   },
+  ["i"] = { "<cmd>Format<CR>", "Format" },
   ["e"] = { "<cmd>NvimTreeToggle<cr>", "Explorer" },
   ["w"] = { "<cmd>w!<CR>", "Save" },
-  ["q"] = { "<cmd>q!<CR>", "Quit" },
-  ["c"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
+  ["q"] = { "<cmd>Bdelete!<CR>", "Close Buffer" },
   ["h"] = { "<cmd>nohlsearch<CR>", "No Highlight" },
+  ["u"] = { "<cmd>:UndotreeToggle<CR>", "undotree"},
   ["f"] = {
     "<cmd>lua require('telescope.builtin').find_files(require('telescope.themes').get_dropdown{previewer = false})<cr>",
     "Find files",
   },
   ["F"] = { "<cmd>Telescope live_grep theme=ivy<cr>", "Find Text" },
   ["P"] = { "<cmd>Telescope projects<cr>", "Projects" },
+
+  t = {
+    name = "Trouble",
+
+    x = { "<cmd>TroubleToggle<CR>", "Toggle" },
+    w = { "<cmd>TroubleToggle workspace_diagnostics<CR>", "Toggle workspace diagnostics"},
+    d = { "<cmd>TroubleToggle document_diagnostics<CR>", "Toggle document diagnostics"},
+    l = { "<cmd>TroubleToggle loclist<CR>", "loclist"},
+    q = { "<cmd>TroubleToggle quickfix<CR>", "quickfix"},
+  },
 
   g = {
     name = "Git",

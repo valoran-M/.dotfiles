@@ -37,30 +37,15 @@ keymap("n", "<A-l>", ":bnext<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==", opts)
 
+keymap("n", "<C-k>", "<cmd>cnext<CR>zz", opts)
+keymap("n", "<C-j>", "<cmd>cprev<CR>zz", opts)
+
 
 vim.keymap.set("n", "<esc><esc>", vim.cmd.nohlsearch, { desc = "[esc] hlsearch" })
---save with Ctrl+s 
-keymap("n", "<C-s>", ":w<CR>", opts)
-
-keymap("n", "<C-i>", ":Format<CR>", opts)
-
--- Nvimtree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
-
-keymap('n', '<leader>u', ":UndotreeToggle<cr>", opts)
-
---trouble
-keymap("n", "<leader>xx", "<cmd>TroubleToggle<cr>", opts)
-keymap("n", "<leader>xw", "<cmd>TroubleToggle workspace_diagnostics<cr>", opts)
-keymap("n", "<leader>xd", "<cmd>TroubleToggle document_diagnostics<cr>", opts)
-keymap("n", "<leader>xl", "<cmd>TroubleToggle loclist<cr>", opts)
-keymap("n", "<leader>xq", "<cmd>TroubleToggle quickfix<cr>", opts)
 
 -- Insert --
 keymap("i", "jk", "<esc>", opts)
 -- save with Ctrl+s
-keymap("i", "<C-s>", "<ESC>:w<CR>a", opts)
--- Press jk fast to enter
 keymap("i", "<C-s>", "<ESC>:w<CR>a", opts)
 
 -- Visual --

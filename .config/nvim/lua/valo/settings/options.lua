@@ -1,4 +1,5 @@
 local options = {
+  autoindent	= true,
   clipboard     = "unnamedplus", -- allow nvim to access to system clipboard
   completeopt   = { "menuone", "noselect" },
   cursorline    = true,
@@ -33,12 +34,15 @@ local options = {
   scrolloff     = 8,      -- minimal number of screen lines to keep above and below the cursor.
   sidescrolloff = 8,      -- minimal number of screen lines to keep left and right of the cursor.
   showcmd       = false,
+  smartindent   = true,
   ruler         = false,
   laststatus    = 3,
   whichwrap     = "bs<>[]",
+  wrapmargin    = 0,
   textwidth     = 80,
   colorcolumn   = "+1",
   relativenumber= true,
+  modifiable    = true,
 }
 
 vim.g.loaded_ruby_provider = 0

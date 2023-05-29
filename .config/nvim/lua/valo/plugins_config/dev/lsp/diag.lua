@@ -1,9 +1,9 @@
 -- Diagnostic symbols in the sign column (gutter)
-local signs = { 
-    Error = " ", 
-    Warn  = " ", 
+local signs = {
+    Error = " ",
+    Warn  = " ",
     Info  = " ",
-    Hint  = " " 
+    Hint  = " "
 }
 
 for type, icon in pairs(signs) do
