@@ -52,7 +52,7 @@ lazy.setup({
   "hrsh7th/cmp-cmdline", -- cmdline completions
   "saadparwaiz1/cmp_luasnip", -- snippet completions
 
-  -- LSP 
+  -- LSP
   "neovim/nvim-lspconfig", -- enable LSP
   "williamboman/nvim-lsp-installer",
   "jose-elias-alvarez/null-ls.nvim", -- LSP diagnostics and code actions
@@ -66,6 +66,7 @@ lazy.setup({
   -- Telescope
   "nvim-telescope/telescope.nvim",
   'nvim-telescope/telescope-media-files.nvim',
+  "kdheepak/lazygit.nvim",
 
   -- snippets
   "L3MON4D3/LuaSnip", --snippet engine
@@ -86,6 +87,7 @@ lazy.setup({
   "mbbill/undotree",
   "chentoast/marks.nvim",
 
+  "ellisonleao/glow.nvim",
   "RaafatTurki/hex.nvim",
 
   "vigoux/LanguageTool.nvim",

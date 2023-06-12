@@ -56,6 +56,8 @@ ex ()
   fi
 }
 
+alias n="nvim ."
+alias nconf="nvim ~/.config/nvim/"
 
 # pacman and yay
 alias pacsyu="sudo pacman -Syyu"                 # update only standard pkgs

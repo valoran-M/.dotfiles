@@ -1,7 +1,5 @@
 local opts = { noremap = true, silent = true }
 
-local term_opts = { silhnt = true }
-
 local keymap = vim.api.nvim_set_keymap
 
 --Remap space as leader key
@@ -41,7 +39,12 @@ keymap("n", "<C-k>", "<cmd>cnext<CR>zz", opts)
 keymap("n", "<C-j>", "<cmd>cprev<CR>zz", opts)
 
 
-vim.keymap.set("n", "<esc><esc>", vim.cmd.nohlsearch, { desc = "[esc] hlsearch" })
+keymap("n", "(", "(zz", opts)
+keymap("n", ")", ")zz", opts)
+keymap("n", "{", "{zz", opts)
+keymap("n", "}", "}zz", opts)
+
+keymap("n", "<esc><esc>", "<cmd>nohlsearch<CR>", { desc = "[esc] hlsearch" })
 
 -- Insert --
 keymap("i", "jk", "<esc>", opts)
