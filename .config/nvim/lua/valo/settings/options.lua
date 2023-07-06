@@ -43,7 +43,8 @@ local options = {
   colorcolumn   = "+1",
   relativenumber= true,
   modifiable    = true,
-  history = 1000,
+  history       = 1000,
+  spelllang     = "fr",
 }
 
 vim.g.loaded_ruby_provider = 0

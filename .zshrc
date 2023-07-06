@@ -25,8 +25,6 @@ plugins=(
 	fast-syntax-highlighting
 )
 
-
-
 source $ZSH/oh-my-zsh.sh
 
 ### ARCHIVE EXTRACTION
@@ -57,7 +55,7 @@ ex ()
 }
 
 alias n="nvim ."
-alias nconf="nvim ~/.config/nvim/"
+alias ncf="nvim ~/.config/nvim/"
 
 # pacman and yay
 alias pacsyu="sudo pacman -Syyu"                 # update only standard pkgs

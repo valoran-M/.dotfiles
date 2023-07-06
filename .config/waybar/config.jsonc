@@ -1,5 +1,5 @@
 {
-    "height": 5,
+    "height": 0,
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
@@ -12,6 +12,7 @@
         "backlight",
         "battery",
         "tray",
+        "custom/monitor",
         "custom/theme",
         "custom/power" ],
 
@@ -44,7 +45,7 @@
 // center //
 
     "clock": {
-        "format": "{: %H:%M %p 󰃭 %a %d}",
+        "format": "{: %H:%M 󰃭 %a %d}",
         "tooltip-format": "<tt><big>{calendar}</big></tt>"
     },
 
@@ -103,5 +104,11 @@
     "custom/theme": {
       "format": "󰈈 ",
       "on-click": "bash ~/.config/waybar/scripts/theme.sh"
+    },
+
+    "custom/monitor": {
+      "format": "󰍹 ",
+      "on-click": "bash ~/.config/rofi/monitor/launch.sh"
+    }
   }
 }

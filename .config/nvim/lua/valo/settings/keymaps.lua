@@ -35,8 +35,8 @@ keymap("n", "<A-l>", ":bnext<CR>", opts)
 keymap("n", "<A-j>", "<Esc>:m .+1<CR>==", opts)
 keymap("n", "<A-k>", "<Esc>:m .-2<CR>==", opts)
 
-keymap("n", "<C-k>", "<cmd>cnext<CR>zz", opts)
-keymap("n", "<C-j>", "<cmd>cprev<CR>zz", opts)
+keymap("n", "<e>", "<cmd>cnext<CR>zz", opts)
+keymap("n", "<E>", "<cmd>cprev<CR>zz", opts)
 
 
 keymap("n", "(", "(zz", opts)

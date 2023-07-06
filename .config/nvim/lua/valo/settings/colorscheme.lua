@@ -2,7 +2,7 @@ local colorscheme = "gruvbox"
 
 vim.cmd.colorscheme(colorscheme)
 
-function select_background()
+local function select_background()
   if os.getenv("THEME") == "light" then
     vim.cmd [[ set background=light ]]
   else
@@ -12,12 +12,12 @@ end
 select_background()
 
 -- change theme
-function reload()
+local function reload()
   vim.cmd [[ doautocmd OptionSet background ]]
   vim.cmd [[ doautocmd ColorScheme * ]]
 end
 
-function light() 
+function light()
   vim.cmd [[ set background=light ]]
   reload()
 end

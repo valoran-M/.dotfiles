@@ -86,6 +86,7 @@ lazy.setup({
 
   "mbbill/undotree",
   "chentoast/marks.nvim",
+  "alec-gibson/nvim-tetris",
 
   "ellisonleao/glow.nvim",
   "RaafatTurki/hex.nvim",
@@ -93,4 +94,7 @@ lazy.setup({
   "vigoux/LanguageTool.nvim",
   "toppair/peek.nvim",
   "Fymyte/rasi.vim",
+  "m4xshen/hardtime.nvim",
+  "krady21/compiler-explorer.nvim",
+  "stevearc/dressing.nvim",
 })
