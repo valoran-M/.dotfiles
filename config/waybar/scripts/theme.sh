@@ -15,7 +15,8 @@ fi
 
 #change style files
 ln -sf ~/.config/waybar/$SWITCHTO.css ~/.config/waybar/theme.css
-ln -sf ~/.config/hypr/pacman-$SWITCHTO.png ~/.config/hypr/wallpaper.png
+ln -sf ~/.config/hypr/wallpapers/pacman-$SWITCHTO.png \\
+       ~/.config/hypr/wallpapers/wallpaper.png
 ln -sf ~/.config/kitty/gruvbox-$SWITCHTO.conf ~/.config/kitty/style.conf
 ln -sf ~/.config/rofi/gruvbox-$SWITCHTO.rasi ~/.config/rofi/theme.rasi
 
