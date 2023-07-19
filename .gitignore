@@ -43,6 +43,8 @@ luac.out
 *.x86_64
 *.hex
 
+wallpaper.png
+
 
 # End of https://www.toptal.com/developers/gitignore/api/lua
 
