@@ -59,7 +59,7 @@ I am on archlinux and use pacman and yay as package manager
 
 1. [nemo](https://github.com/linuxmint/nemo) - File Manager
 1. [imv](https://github.com/eXeC64/imv) - Image viewer for X11 and Wayland
-1. [gim](https://github.com/snapcrafters/gimp) - The Free & Open Source Image Editor
+1. [gimp](https://github.com/snapcrafters/gimp) - The Free & Open Source Image Editor
 1. [thunderbird](https://www.thunderbird.net/) - Email client
 1. [discord](https://discord.com/) - 
 1. [spotify](https://www.spotify.com/) -
@@ -86,7 +86,7 @@ I am on archlinux and use pacman and yay as package manager
 Thanks to:
 
 * [gurvan.dev](https://gitlab.com/Gurvan.dev) - For encouraging me at
-    the beginning to switch to neovim
+    the beginning to switch to neovim and pkgs install script
 * [josuemoreau](https://github.com/josuemoreau) - For finally motivating
     me to switch to hyprland
 * [paulpatault](https://github.com/paulpatault) - To help me with neovim
