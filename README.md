@@ -42,7 +42,7 @@ I am on archlinux and use pacman and yay as package manager
     wallpaper setter
 1. [waybar](https://github.com/Alexays/Waybar) - Highly customizable 
     Wayland bar
-1. [roffi](https://github.com/lbonn/rofi) - A window switcher, Application 
+1. [rofi](https://github.com/lbonn/rofi) - A window switcher, Application 
     launcher and dmenu replacement. (Wayland fork)
 1. [wdisplays](https://github.com/luispabon/wdisplays) - wdisplays is a graphical 
     application for configuring displays in Wayland compositors.
