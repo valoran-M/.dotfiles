@@ -4,7 +4,7 @@ set -ex
 
 tagVol="notifyvol"
 
-function notify_bright
+notify_bright()
 {
     lig=`light`
     lig=${lig%.*}

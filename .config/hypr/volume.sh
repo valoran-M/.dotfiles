@@ -2,7 +2,7 @@
 
 tagVol="notifyvol"
 
-function notify_vol
+notify_vol()
 {
     vol=`pamixer --get-volume | cat`
     #bar=$(seq -s "─" $(($vol / 5)) | sed 's/[0-9]//g')
@@ -14,7 +14,7 @@ function notify_vol
     angle="$(( (($vol+2)/5) * 5 ))"
     ico="~/.config/dunst/iconvol/vol-${angle}.svg"
 
-    if [ "$mute" == true ] ; then
+    if [ "$mute" = true ] ; then
         dunstify "Muted" -i $ico -a "$sink" -u low -r 91190 -t 800
 
     elif [ $vol -ne 0 ] ; then
