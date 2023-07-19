@@ -9,24 +9,24 @@ theme, so I put it everywhere.
 <details>
 <summary><b><code>Wall </code></b></summary>
 
-![wall dark](.dotfiles/wall_dark.png)
-![wall light](.dotfiles/wall_light.png)
+![wall dark](img/wall_dark.png)
+![wall light](img/wall_light.png)
 
 </details>
 
 <details>
 <summary><b><code>Nvim </code></b></summary>
 
-![nvim](.dotfiles/nvim.png)
-![nvim coq](.dotfiles/nvim-coq.png)
+![nvim](img/nvim.png)
+![nvim coq](img/nvim-coq.png)
 
 </details>
 
 <details>
 <summary><b><code>Unix Porn </code></b></summary>
 
-![porn dark](.dotfiles/porn-dark.png)
-![porn light](.dotfiles/porn-light.png)
+![porn dark](img/porn-dark.png)
+![porn light](img/porn-light.png)
 
 </details>
 
