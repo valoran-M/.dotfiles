@@ -1,10 +1,10 @@
 #! /bin/sh
-#
+
 ###
 # Author : gurvan.dev
 ###
 
-BASEDIR=$(dirname "$0")/..
+BASEDIR=$(pwd)
 
 echo "Installing dotfiles..."
 mkdir -p $HOME/.config
@@ -20,12 +20,12 @@ install_config ()
   if [ -e $3 ]
   then 
     echo "Config for $1 exists."
-    read -p "Do you want to replace it? [Y/n]" yn
+    read -p "Do you want to replace it ?" yn
     case $yn in
-        [Yy]* ) cp -rv $2 $3 
+        [Yy]* ) rm $3 && ln -sf $2 $3
     esac
   else
-    cp -rv $2 $3
+    ln -s $2 $3
   fi
 }
 

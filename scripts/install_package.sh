@@ -4,7 +4,7 @@
 # Author : gurvan.dev
 ###
 
-BASEDIR=$(dirname "$0")
+BASEDIR=$(dirname "$0")/..
 PKGSDIR="${BASEDIR}/pkgs"
 
 if [ $(command -v pacman) ]; then 
