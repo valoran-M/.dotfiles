@@ -44,6 +44,9 @@ luac.out
 *.hex
 
 wallpaper.png
+style.conf
+theme.rasi
+theme.css
 
 
 # End of https://www.toptal.com/developers/gitignore/api/lua

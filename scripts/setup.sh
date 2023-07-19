@@ -39,4 +39,15 @@ do
   install_config $homeconfig $BASEDIR/home/$homeconfig $HOME/$homeconfig
 done
 
+set -ex
+
+ln -sf $BASEDIR/config/hypr/wallpapers/pacman-dark.png \
+       $HOME/.config/hypr/wallpapers/wallpaper.png
+ln -sf $BASEDIR/config/kitty/gruvbox-dark.conf \
+       $HOME/.config/kitty/style.conf
+ln -sf $BASEDIR/config/rofi/gruvbox-dark.rasi \
+       $HOME/.config/rofi/theme.rasi
+ln -sf $BASEDIR/config/waybar/dark.css \
+       $HOME/.config/waybar/theme.css
+
 echo "Done."
