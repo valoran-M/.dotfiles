@@ -8,7 +8,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export ZSH="/home/valeran/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 export EDITOR=nvim
 export OPENCV_LOG_LEVEL=ERROR
 export MESA_LOADER_DRIVER_OVERRIDE=i965
@@ -21,7 +21,7 @@ plugins=(
 	git
 	sudo
 	dirhistory
-	zsh-autosuggestions
+  zsh-autosuggestions
 	fast-syntax-highlighting
 )
 
@@ -116,11 +116,12 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # opam configuration
-[[ ! -r /home/valeran/.opam/opam-init/init.zsh ]] || source /home/valeran/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+[[ ! -r $HOME/.opam/opam-init/init.zsh ]] || source $HOME/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
-THEME=$(readlink -f ~/.config/waybar/theme.css | cut -d '/' -f6)
+THEME=$(readlink -f ~/.config/waybar/theme.css | rev | cut -d '/' -f1 | rev )
 if [ $THEME = "light.css" ]; then
   export THEME="light"
 else
   export THEME="dark"
 fi
+
