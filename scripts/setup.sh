@@ -22,7 +22,7 @@ install_config ()
     echo "Config for $1 exists."
     read -p "Do you want to replace it ?" yn
     case $yn in
-        [Yy]* ) rm $3 && ln -sf $2 $3
+        [Yy]* ) rm -rfv $3 && ln -sfv $2 $3
     esac
   else
     ln -s $2 $3

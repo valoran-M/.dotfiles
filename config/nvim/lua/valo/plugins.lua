@@ -88,6 +88,8 @@ lazy.setup({
   "chentoast/marks.nvim",
   "alec-gibson/nvim-tetris",
 
+  "norcalli/nvim-colorizer.lua",
+
   "ellisonleao/glow.nvim",
   "RaafatTurki/hex.nvim",
 
