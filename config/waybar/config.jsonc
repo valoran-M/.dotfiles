@@ -67,7 +67,7 @@
     },
 
     "pulseaudio#microphone": {
-        "format": "",
+        "format": " ",
         "format-source-muted": "",
         "on-click": "pavucontrol -t 4",
         "on-click-middle": "pamixer --default-source -t",

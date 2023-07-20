@@ -8,7 +8,7 @@ configuration {
 	drun-display-format:        "{name}";
 	window-format:              "{w} · {c} · {t}";
 	font:                       "JetBrains Mono Nerd Font 10";
-	icon-theme:                 "Tela-circle-dracula-dark";
+	icon-theme:                 "Tela-circle-icon";
 }
 
 @import "theme.rasi"

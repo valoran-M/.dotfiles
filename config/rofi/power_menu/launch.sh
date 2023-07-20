@@ -11,7 +11,7 @@ set -ex
 # CMDs
 lastlogin="`last $USER | head -n1 | cut -d ' ' -f1`"
 uptime="`uptime -p | sed -e 's/up //g'`"
-host=`hostname`
+host=`hostnamectl hostname `
 
 # Options
 hibernate='󰏦'

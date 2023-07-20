@@ -17,12 +17,13 @@ capacity=$(cat $capacity_file)
 
 check_status(){
   status_tmp=$(cat $status_file)
-  if [ $status_tmp = Discharging ] && [ $status = Charging ]; then
+  if [ "$status_tmp" = "Discharging" ] && [ "$status" = "Charging" ]; then
     status=$status_tmp
+    echo "OK"
     dunstify "󰁹 Discharging" -u low -r 91190 -t 1000
   fi
 
-  if [ $status_tmp = Charging ] && [ $status = Discharging ]; then
+  if [ "$status_tmp" = "Charging" ] && [ "$status" = "Discharging" ]; then
     status=$status_tmp
     dunstify "󰂄 Charging" -u low -r 91190 -t 1000
   fi
