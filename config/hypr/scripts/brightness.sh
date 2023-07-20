@@ -2,8 +2,6 @@
 
 set -ex
 
-tagVol="notifyvol"
-
 notify_bright()
 {
     lig=`light`
@@ -16,13 +14,14 @@ notify_bright()
 
 case $1 in
     i) light -A 5
-        notify_bright
+      notify_bright
     ;;
     d) light -U 5
-        notify_bright
+      notify_bright
     ;;
     *) echo "brightness.sh [action]"
         echo "i -- increase brightness [+5]"
         echo "d -- decrease brightness [-5]"
     ;;
 esac
+
