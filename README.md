@@ -1,6 +1,5 @@
 # My  Dotfiles
 
-
 Hi, this is my directory containing my configuration files. 
 I'm a big fan of the [gruvbox](https://github.com/morhetz/gruvbox)
 theme, so I put it everywhere.
