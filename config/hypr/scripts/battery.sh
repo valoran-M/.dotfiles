@@ -30,11 +30,11 @@ check_status(){
 
 check_capcity(){
   capacity_tmp=$(cat $capacity_file)
-  if [ $capacity_tmp -le $capacity ]; then
-    if [ $capacity_tmp -le $min_urgent2 ] && [ $notif2 == true ]; then
+  if [ $capacity_tmp -lt $capacity ]; then
+    if [ $capacity_tmp -lt $min_urgent2 ] && [ $notif2 == true ]; then
       dunstify "󰂎 capcity < 5 %   " -u critical -r 91190 -t 5000
       notif2=false
-    elif [ $capacity_tmp -le $min_urgent1 ] && [ $notif1 == true ]; then
+    elif [ $capacity_tmp -lt $min_urgent1 ] && [ $notif1 == true ]; then
       dunstify "󰁺 capcity < 10 %  " -u critical -r 91190 -t 5000
       notif1=false
       notif2=true
