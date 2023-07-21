@@ -1,8 +1,8 @@
-"        _                    
-"       (_)                   
-" __   ___ _ __ ___  _ __ ___ 
+"        _
+"       (_)
+" __   ___ _ __ ___  _ __ ___
 " \ \ / / | '_ ` _ \| '__/ __|
-"  \ V /| | | | | | | | | (__ 
+"  \ V /| | | | | | | | | (__
 " (_)_/ |_|_| |_| |_|_|  \___|
 
 
@@ -32,7 +32,7 @@ function! OpamConfMerlin()
 endfunction
 let s:opam_configuration['merlin'] = function('OpamConfMerlin')
 
-let g:opamshare = substitute(system('opam config var share'),'\n$','','''') 
+let g:opamshare = substitute(system('opam config var share'),'\n$','','''')
 execute "set rtp+=" . g:opamshare . "/merlin/vim"
 let g:syntastic_ocaml_checkers = ['merlin']
 

@@ -15,10 +15,10 @@ mkdir -p $HOME/.config
 # arg 3 : Destination path
 # --------
 
-install_config () 
+install_config ()
 {
   if [ -e $3 ]
-  then 
+  then
     echo "Config for $1 exists."
     read -p "Do you want to replace it ?" yn
     case $yn in

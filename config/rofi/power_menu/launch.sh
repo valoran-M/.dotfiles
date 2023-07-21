@@ -2,7 +2,7 @@
 
 # thanks to :
 #   https://github.com/adi1090x/rofi/tree/master
-#   
+#
 #   Author : Aditya Shakya (adi1090x)
 #   Github : @adi1090x
 

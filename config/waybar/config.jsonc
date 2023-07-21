@@ -6,7 +6,7 @@
     "layer": "top",
     "modules-left": ["wlr/workspaces", "custom/spotify"],
     "modules-center": ["clock"],
-    "modules-right": 
+    "modules-right":
       [ "pulseaudio",
         "pulseaudio#microphone",
         "backlight",
@@ -54,7 +54,7 @@
 
     "pulseaudio": {
         "format": " {icon}",
-        "format-muted": "婢",
+        "format-muted": "󰝟 ",
         "on-click": "pavucontrol -t 3",
         "scroll-step": 5,
         "tooltip": true,
