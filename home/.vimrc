@@ -54,5 +54,3 @@ endif
 
 let g:loaded_perl_provider = 0
 
-export WINIT_UNIX_BACKEND=x11
-
