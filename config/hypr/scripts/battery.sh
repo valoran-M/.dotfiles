@@ -19,7 +19,6 @@ check_status(){
   status_tmp=$(cat $status_file)
   if [ "$status_tmp" = "Discharging" ] && [ "$status" = "Charging" ]; then
     status=$status_tmp
-    echo "OK"
     dunstify "󰁹 Discharging" -u low -r 91190 -t 1000
   fi
 
@@ -53,5 +52,4 @@ do
   check_capcity
   sleep 1s
 done
-
 
