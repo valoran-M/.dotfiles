@@ -1,3 +1,4 @@
+require "valo.plugins_config.dev.cmp"
 require "valo.plugins_config.dev.comment"
 require "valo.plugins_config.dev.formatter"
 require "valo.plugins_config.dev.hex"
