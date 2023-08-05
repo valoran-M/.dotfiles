@@ -60,3 +60,7 @@ keymap("v", ">", ">gv", opts)
 -- Visual --
 keymap("v", "<A-j>", ":m '>+1<cr>gv=gv", { desc = "" })
 keymap("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "" })
+
+keymap("n", "<right>", "xp", { desc = "move char [right]" })
+keymap("n", "<left>", "hxph", { desc = "move char [left]" })
+

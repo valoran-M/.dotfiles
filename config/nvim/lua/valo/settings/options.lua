@@ -45,6 +45,7 @@ local options = {
   modifiable    = true,
   history       = 1000,
   spelllang     = "fr",
+  list          = true,
 }
 
 vim.g.loaded_ruby_provider = 0
