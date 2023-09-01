@@ -5,8 +5,8 @@ tagVol="notifyvol"
 notify_vol()
 {
     vol=`pamixer --get-volume | cat`
-    #bar=$(seq -s "─" $(($vol / 5)) | sed 's/[0-9]//g')
-    #dunstify "${vol}%" "$bar" -a "Volume" -r 91190
+    bar=$(seq -s "─" $(($vol / 5)) | sed 's/[0-9]//g')
+    dunstify "${vol}%" "$bar" -a "Volume" -r 91190
 
     sink=`pamixer --get-default-sink | tail -1 | rev | cut -d '"' -f -2 | rev | sed 's/"//'`
     mute=`pamixer --get-mute | cat`

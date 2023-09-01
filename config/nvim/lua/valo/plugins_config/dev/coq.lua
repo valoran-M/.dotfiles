@@ -21,5 +21,7 @@ function KeymapCoq()
   vim.keymap.set("n", "<A-,>","<Plug>CoqToLine")
   vim.keymap.set("n", "K", "<Plug>CoqCheck")
 
+  --[[ vim.keymap.set("n", "P", "<Plug>Coq Print") ]]
+
   vim.keymap.set("n", "<A-c>", "<Plug>CoqStop")
 end
