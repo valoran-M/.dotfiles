@@ -1,5 +1,3 @@
-local fn = vim.fn
-
 -- Automatically install pacer
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
@@ -19,6 +17,7 @@ local lazy = require("lazy")
 
 -- Install your plugins here
 lazy.setup({
+  "junegunn/vim-plug",
   "nvim-lua/popup.nvim", -- An implementation of the Popup API from vim in Neovim
   "nvim-lua/plenary.nvim", -- Useful lua functions used by lots of plugins
 
@@ -99,4 +98,5 @@ lazy.setup({
   "m4xshen/hardtime.nvim",
   "krady21/compiler-explorer.nvim",
   "stevearc/dressing.nvim",
+  { "valo/arrakis.vim", dir="~/workspace/vim/arrakis.vim", dev=true }
 })

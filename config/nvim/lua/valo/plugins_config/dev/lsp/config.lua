@@ -5,7 +5,8 @@ local servers = {
 	"texlab",
   "pyright",
   "ltex",
-  "rust_analyzer"
+  "rust_analyzer",
+  "vimls"
 }
 
 require("nvim-lsp-installer").setup {}
