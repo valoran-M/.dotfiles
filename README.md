@@ -87,6 +87,4 @@ Thanks to:
 
 * [gurvan.dev](https://gitlab.com/Gurvan.dev) - For encouraging me at
     the beginning to switch to neovim and pkgs install script
-* [josuemoreau](https://github.com/josuemoreau) - For finally motivating
-    me to switch to hyprland
 * [paulpatault](https://github.com/paulpatault) - To help me with neovim
