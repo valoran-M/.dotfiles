@@ -51,6 +51,9 @@ local options = {
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_perl_provider = 0
 
+vim.g.jupytext_fmt = "py"
+vim.g.jupytext_style = "hydrogen"
+
 vim.wo.winfixwidth = true
 vim.wo.linebreak = true
 vim.wo.number = true

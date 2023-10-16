@@ -1,8 +1,8 @@
 local servers = {
   "lua_ls",
-	"ocamllsp",
-	"clangd",
-	"texlab",
+  "ocamllsp",
+  "clangd",
+  "texlab",
   "pyright",
   "ltex",
   "rust_analyzer",

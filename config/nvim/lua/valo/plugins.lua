@@ -87,12 +87,14 @@ lazy.setup({
   "chentoast/marks.nvim",
   "alec-gibson/nvim-tetris",
 
+  "GCBallesteros/jupytext.vim",
+
   "norcalli/nvim-colorizer.lua",
 
   "ellisonleao/glow.nvim",
   "RaafatTurki/hex.nvim",
 
-  "vigoux/LanguageTool.nvim",
+  --[[ "vigoux/LanguageTool.nvim", ]]
   "toppair/peek.nvim",
   "Fymyte/rasi.vim",
   "m4xshen/hardtime.nvim",
