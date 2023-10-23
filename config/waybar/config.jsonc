@@ -4,7 +4,7 @@
     "passthrough": false,
     "gtk-layer-shell": true,
     "layer": "top",
-    "modules-left": ["wlr/workspaces", "custom/spotify"],
+    "modules-left": ["hyprland/workspaces", "custom/spotify"],
     "modules-center": ["clock"],
     "modules-right":
       [ "pulseaudio",
@@ -19,10 +19,9 @@
 
 // left
 
-   "wlr/workspaces": {
-       "disable-scroll": true,
+   "hyprland/workspaces": {
        "all-outputs": true,
-       "on-click": "activate",
+       // "on-click": "activate",
        "format": "{icon}",
        "format-icons": {
           "5": "",
