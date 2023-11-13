@@ -9,7 +9,7 @@ endif
 
 syn clear
 
-syn keyword objlngKeyword putchar var function return
+syn keyword objlngKeyword putchar var function return instanceof
 syn keyword objlngKeywordClass class attribute method extends new this super
 syn keyword objlngConditional if else
 syn keyword objlngRepeat while

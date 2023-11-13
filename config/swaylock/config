@@ -9,7 +9,7 @@ clock
 timestr=%R
 datestr=%a, %e of %B
 
-fade-in=0.2
+fade-in=0.0
 
 effect-blur=20x2
 effect-scale=0.3
