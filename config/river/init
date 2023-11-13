@@ -4,14 +4,17 @@
 
 MOD="Super"
 TERMINAL="kitty"
+FILE_EXPLORER="nemo"
 LAUNCHER="rofi -show drun"
 KEY_LAYOUT="fr"
-
 
 riverctl keyboard-layout ${KEY_LAYOUT}
 
 riverctl map normal ${MOD} Q spawn "${TERMINAL}"
+riverctl map normal ${MOD} E spawn "${FILE_EXPLORER}"
 riverctl map normal ${MOD} A spawn "${LAUNCHER}"
+
+riverctl map normal ${MOD} Tab spawn "rofi -show window"
 
 riverctl map normal ${MOD} J focus-view next
 riverctl map normal ${MOD} K focus-view previous
@@ -20,13 +23,17 @@ riverctl map normal ${MOD} Z zoom
 riverctl map normal ${MOD}+Shift J swap next
 riverctl map normal ${MOD}+Shift K swap previous
 
-riverctl map normal $MOD H send-layout-cmd rivertile "main-ratio -0.05"
-riverctl map normal $MOD L send-layout-cmd rivertile "main-ratio +0.05"
+riverctl map normal ${MOD} H send-layout-cmd rivertile "main-ratio -0.02"
+riverctl map normal ${MOD} L send-layout-cmd rivertile "main-ratio +0.02"
+
+riverctl map normal None F9 spawn swaylock
 
 riverctl map normal ${MOD} C close
 
 riverctl map normal ${MOD} F toggle-fullscreen
+riverctl map normal ${MOD} V toggle-float
 
+# window
 
 i=1
 keys=("Ampersand" "Eacute" "Quotedbl" "Apostrophe" "Parenleft" "Minus" "Egrave" "Underscore" "Ccedilla")
@@ -48,17 +55,31 @@ do
 
     i=$(($i+1))
 done
+riverctl map normal ${MOD} s set-focused-tags 64  # 7
+riverctl map normal ${MOD} d set-focused-tags 128 # 8
+riverctl map normal ${MOD} t set-focused-tags 256 # 9
 
+riverctl map normal Super Up    send-layout-cmd rivertile "main-location top"
+riverctl map normal Super Right send-layout-cmd rivertile "main-location right"
+riverctl map normal Super Down  send-layout-cmd rivertile "main-location bottom"
+riverctl map normal Super Left  send-layout-cmd rivertile "main-location left"
+
+# complex script
 VOLUME_SCRIPT="${XDG_CONFIG_HOME}/river/script/volume.sh"
 BRIGHT_SCRIPT="${XDG_CONFIG_HOME}/river/script/brightness.sh"
+SCREENSHOT_SCRIPT="${XDG_CONFIG_HOME}/river/script/screenshot.sh"
+POWER_MENU="${XDG_CONFIG_HOME}/rofi/power_menu/launch.sh"
 
-# Control pulse audio volume with pamixer (https://github.com/cdemoulins/pamixer)
 riverctl map normal None XF86AudioRaiseVolume  spawn "${VOLUME_SCRIPT}  5"
 riverctl map normal None XF86AudioLowerVolume  spawn "${VOLUME_SCRIPT} -5"
 riverctl map normal None XF86AudioMute         spawn "${VOLUME_SCRIPT}  0"
 
 riverctl map normal None XF86MonBrightnessUp   spawn "${BRIGHT_SCRIPT}  5"
 riverctl map normal None XF86MonBrightnessDown spawn "${BRIGHT_SCRIPT} -5"
+
+riverctl map normal None Print spawn "${SCREENSHOT_SCRIPT}"
+
+riverctl map normal ${MOD}+Shift P spawn "${POWER_MENU}"
 
 # Set background and border color
 riverctl background-color 0x28282800
@@ -74,6 +95,10 @@ riverctl spawn "nm-applet -indicator"
 riverctl spawn "blueman-applet"
 riverctl spawn "swww init && swww img ~/.config/hypr/wallpapers/wallpaper.png"
 riverctl spawn "${XDG_CONFIG_HOME}/hypr/scripts/battery.sh"
+
+# rules
+
+# riverctl rule-add -app-id 'Discord*' tags 128 # 8
 
 # Set the default layout generator to be rivertile and start it.
 # River will send the process group of the init executable SIGTERM on exit.
