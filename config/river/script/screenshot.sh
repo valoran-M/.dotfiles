@@ -1,7 +1,8 @@
 #!/bin/sh
 
 DATE=$(date +%Y%m%d_%Ih%Mm%Ss)
-PATH="$HOME/Pictures/Screenshots/${DATE}_grim.png"
+SCREEN_PATH="$HOME/Pictures/Screenshots/${DATE}_grim.png"
 
 
-grim -g \"\$(slurp)\" "${PATH}" && dunstify 'Screenshot taken.'
+grim -g "$(slurp)" "${SCREEN_PATH}" && dunstify 'Screenshot taken.'
+

@@ -23,8 +23,11 @@ riverctl map normal ${MOD} Z zoom
 riverctl map normal ${MOD}+Shift J swap next
 riverctl map normal ${MOD}+Shift K swap previous
 
-riverctl map normal ${MOD} H send-layout-cmd rivertile "main-ratio -0.02"
-riverctl map normal ${MOD} L send-layout-cmd rivertile "main-ratio +0.02"
+riverctl map normal ${MOD} H focus-output previous
+riverctl map normal ${MOD} L focus-output next
+
+riverctl map normal ${MOD}+Shift H send-layout-cmd rivertile "main-ratio -0.02"
+riverctl map normal ${MOD}+Shift L send-layout-cmd rivertile "main-ratio +0.02"
 
 riverctl map normal None F9 spawn swaylock
 
@@ -32,6 +35,11 @@ riverctl map normal ${MOD} C close
 
 riverctl map normal ${MOD} F toggle-fullscreen
 riverctl map normal ${MOD} V toggle-float
+
+riverctl map-pointer normal Super BTN_LEFT move-view
+riverctl map-pointer normal Super BTN_RIGHT resize-view
+
+riverctl map normal ${MOD}+Shift C spawn "wl-mirror -c eDP-1"
 
 # window
 
@@ -64,6 +72,22 @@ riverctl map normal Super Right send-layout-cmd rivertile "main-location right"
 riverctl map normal Super Down  send-layout-cmd rivertile "main-location bottom"
 riverctl map normal Super Left  send-layout-cmd rivertile "main-location left"
 
+
+# Iterate over screens (Did my best to try to find all screen)
+i=0
+for output in $(lswt | grep -w -E "HDMI|eDP" | sed 's/.$//' )
+do
+  key=${keys[i]}
+  # $MOD+Alt+[1-9] set focus to screen
+  riverctl map normal $MOD+Alt $key focus-output $output
+  # $MOD+Shife+Alt+[1-9] set currently focused view to output
+  i=$(($i+1))
+done
+echo "OK"
+riverctl map normal $MOD+Shift Right send-to-output next
+riverctl map normal $MOD+Shift Left send-to-output previous
+
+
 # complex script
 VOLUME_SCRIPT="${XDG_CONFIG_HOME}/river/script/volume.sh"
 BRIGHT_SCRIPT="${XDG_CONFIG_HOME}/river/script/brightness.sh"
@@ -86,7 +110,7 @@ riverctl background-color 0x28282800
 riverctl border-color-focused 0xa89984ff
 riverctl border-color-unfocused 0x28282800
 
-riverctl border-wdith 2
+riverctl border-width 2
 
 # startup
 riverctl spawn dunst
