@@ -2,6 +2,7 @@ local servers = {
   "lua_ls",
   "ocamllsp",
   "clangd",
+  "zls",
   "texlab",
   "pyright",
   "ltex",

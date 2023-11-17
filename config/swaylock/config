@@ -23,7 +23,7 @@ key-hl-color=98971a
 
 separator-color=00000000
 
-inside-color=28282800
+inside-color=00000000
 inside-clear-color=28282800
 inside-caps-lock-color=28282800
 inside-ver-color=28282800
@@ -41,7 +41,7 @@ line-caps-lock-color=CC241D00
 line-ver-color=CC241D00
 line-wrong-color=CC241D00
 
-text-color=ebdbb2
+text-color=ebdbb2ff
 text-clear-color=d79921FF
 text-ver-color=98971aFF
 text-wrong-color=CC241DFf
@@ -49,6 +49,5 @@ text-wrong-color=CC241DFf
 bs-hl-color=000000FF
 caps-lock-key-hl-color=ffd204FF
 caps-lock-bs-hl-color=ee2e24FF
-disable-caps-lock-text
 text-caps-lock-color=d65D0E
 
