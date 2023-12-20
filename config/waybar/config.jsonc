@@ -48,7 +48,7 @@
 // center //
 
     "clock": {
-        "format": "{: %H:%M 󰃭 %a %d}",
+        "format": " {:%H:%M 󰃭 %d %a} ",
         "tooltip-format": "<tt><big>{calendar}</big></tt>"
     },
 

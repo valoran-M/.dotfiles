@@ -6,7 +6,7 @@ vim.g.vimtex_context_pdf_viewer = 1
 vim.g.tex_flavor='latex'
 vim.g.tex_conceal = 'abdmg'
 
-vim.g['vimtex_compiler_latexmk'] = {
+vim.g.vimtex_compiler_latexmk = {
       engine = "lualatex",
       options = {
        "-shell-escape",

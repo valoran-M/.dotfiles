@@ -54,6 +54,8 @@ vim.g.loaded_perl_provider = 0
 vim.g.jupytext_fmt = "py"
 vim.g.jupytext_style = "hydrogen"
 
+vim.g.matchup_matchparen_offscreen = { method = "popup" }
+
 vim.wo.winfixwidth = true
 vim.wo.linebreak = true
 vim.wo.number = true

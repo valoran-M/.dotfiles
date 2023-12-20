@@ -72,6 +72,7 @@ lazy.setup({
   "rafamadriz/friendly-snippets", -- a bunch of snippets to use
 
   --Latex
+  "andymass/vim-matchup",
   "lervag/vimtex",
   "peterbjorgensen/sved",
   "machakann/vim-sandwich",
