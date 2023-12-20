@@ -13,15 +13,21 @@ notify_bright()
 }
 
 change_bright() {
+  max=$(brightnessctl m)
+  val=$(brightnessctl g)
+  step=$((${max} * 5 / 100))
   if [ $1 -lt 0 ]; then
-    light -U 5
+    v=$(( ${val} - ${max} * 5 / 100))
+    brightnessctl s "$(( ${val} - ${max} * 5 / 100))"
   elif [ $1 -gt 0 ]; then
-    light -A $1
-  else
-     pamixer -t
+    brightnessctl s "$(( ${val} + ${max} * 5 / 100))"
   fi
-  notify_bright
 }
-
 change_bright $(($1))
+notify_bright
 
+
+    5
+max 100
+
+((max * 5) / 100)
