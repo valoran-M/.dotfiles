@@ -54,6 +54,6 @@ case ${chosen} in
 		systemctl suspend
         ;;
     $logout)
-		hyprctl dispatch exit 0
+		riverctl exit
         ;;
 esac
