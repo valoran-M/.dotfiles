@@ -63,7 +63,8 @@ do
 
     i=$(($i+1))
 done
-riverctl map normal ${MOD} s set-focused-tags 64  # 7
+riverctl map normal ${MOD} s set-focused-tags 32  # 6
+riverctl map normal ${MOD} m set-focused-tags 64  # 7
 riverctl map normal ${MOD} d set-focused-tags 128 # 8
 riverctl map normal ${MOD} t set-focused-tags 256 # 9
 

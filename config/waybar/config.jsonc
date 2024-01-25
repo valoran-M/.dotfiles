@@ -20,7 +20,7 @@
 // left
 
   "river/tags" : {
-    "tag-labels" : [ "1", "2", "3", "4", "5", "6", "󰝚", "󰙯", ""]
+    "tag-labels" : [ "1", "2", "3", "4", "5", "󱅰", "󰝚", "󰙯", ""]
   },
 
   "hyprland/workspaces": {

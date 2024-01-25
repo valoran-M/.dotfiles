@@ -54,6 +54,7 @@ case ${chosen} in
 		systemctl suspend
         ;;
     $logout)
+    killall battery.sh &
 		riverctl exit
         ;;
 esac
