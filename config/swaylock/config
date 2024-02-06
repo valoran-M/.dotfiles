@@ -3,7 +3,7 @@ show-failed-attempts
 ignore-empty-password
 font="Fira Code"
 
-image=~/.config/hypr/wallpapers/wallpaper.png
+image=~/.config/river/wallpapers/wallpaper.png
 
 clock
 timestr=%R
