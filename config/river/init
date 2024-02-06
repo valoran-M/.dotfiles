@@ -118,7 +118,7 @@ riverctl spawn dunst
 riverctl spawn waybar
 riverctl spawn "nm-applet -indicator"
 riverctl spawn "blueman-applet"
-riverctl spawn "swww init && swww img ~/.config/hypr/wallpapers/wallpaper.png"
+riverctl spawn "swww init && swww img ~/.config/river/wallpapers/wallpaper.png"
 riverctl spawn "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
 riverctl spawn "${XDG_CONFIG_HOME}/river/script/battery.sh"
 
