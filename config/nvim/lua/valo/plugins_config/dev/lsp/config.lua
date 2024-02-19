@@ -5,7 +5,6 @@ local servers = {
   "zls",
   "texlab",
   "pyright",
-  "ltex",
   "rust_analyzer",
   "vimls"
 }

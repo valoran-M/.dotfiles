@@ -38,10 +38,7 @@ lazy.setup({
   "moll/vim-bbye",
 
   -- Colorschemes
-  "Mofiqul/dracula.nvim",
-  "altercation/vim-colors-solarized",
   "valoran-M/gruvbox.nvim",
-  "loctvl842/monokai-pro.nvim",
 
   -- cmp plugins
   "hrsh7th/nvim-cmp", -- The completion plugin
@@ -73,7 +70,7 @@ lazy.setup({
   --Latex
   "andymass/vim-matchup",
   "lervag/vimtex",
-  "peterbjorgensen/sved",
+
   "machakann/vim-sandwich",
 
   -- Treesitter
@@ -87,17 +84,12 @@ lazy.setup({
   "chentoast/marks.nvim",
   "alec-gibson/nvim-tetris",
 
-  "GCBallesteros/jupytext.vim",
-
   "norcalli/nvim-colorizer.lua",
 
   "ellisonleao/glow.nvim",
   "RaafatTurki/hex.nvim",
 
-  --[[ "vigoux/LanguageTool.nvim", ]]
-  "toppair/peek.nvim",
   "Fymyte/rasi.vim",
-  "m4xshen/hardtime.nvim",
   "krady21/compiler-explorer.nvim",
   "stevearc/dressing.nvim",
   { "valo/arrakis.vim", dir="~/workspace/vim/arrakis.vim", dev=true }
