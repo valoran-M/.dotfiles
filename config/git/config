@@ -2,6 +2,7 @@
     name  = valorant
     email = mvalo@proton.me
     login = valorant
+    signingkey = 473394D814FD14D5
 
 [core]
     filemode  = false
@@ -13,3 +14,6 @@
 
 [init]
     defaultBranch = main
+
+[commit]
+    gpgsign = true
