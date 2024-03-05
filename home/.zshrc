@@ -120,8 +120,22 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 THEME=$(readlink -f ~/.config/waybar/theme.css | rev | cut -d '/' -f1 | rev )
 if [ $THEME = "light.css" ]; then
+  /usr/bin/theme.sh gruvbox
   export THEME="light"
 else
+  /usr/bin/theme.sh gruvbox-dark
   export THEME="dark"
 fi
+
+TRAPUSR1() {
+  if [ "$THEME" = "light" ];then
+    export THEME="dark"
+    /usr/bin/theme.sh gruvbox-dark
+  elif [ "$THEME" = "dark" ]; then
+    export THEME="light"
+    /usr/bin/theme.sh gruvbox
+  fi
+}
+
+
 

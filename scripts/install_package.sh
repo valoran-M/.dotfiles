@@ -14,3 +14,6 @@ fi
 if [ $(command -v yay) ]; then
   yay -S --needed $(cat $PKGSDIR/aur)
 fi
+
+sudo curl -Lo /usr/bin/theme.sh 'https://git.io/JM70M' && sudo chmod +x /usr/bin/theme.sh
+
