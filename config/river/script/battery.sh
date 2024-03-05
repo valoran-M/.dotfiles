@@ -8,7 +8,7 @@ min_urgent2=5
 notif1=true
 notif2=true
 
-path=/sys/class/power_supply/BAT0
+path=/sys/class/power_supply/BAT1
 status_file="$path/status"
 capacity_file="$path/capacity"
 

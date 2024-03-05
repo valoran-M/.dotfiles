@@ -39,7 +39,7 @@ riverctl map normal ${MOD} V toggle-float
 riverctl map-pointer normal Super BTN_LEFT move-view
 riverctl map-pointer normal Super BTN_RIGHT resize-view
 
-riverctl map normal ${MOD}+Shift C spawn "wl-mirror -c eDP-1"
+riverctl map normal ${MOD}+Shift C spawn "wl-mirror -c DP-2"
 
 # window
 
@@ -99,8 +99,8 @@ riverctl map normal None XF86AudioRaiseVolume  spawn "${VOLUME_SCRIPT}  5"
 riverctl map normal None XF86AudioLowerVolume  spawn "${VOLUME_SCRIPT} -5"
 riverctl map normal None XF86AudioMute         spawn "${VOLUME_SCRIPT}  0"
 
-riverctl map normal None F8 spawn "${BRIGHT_SCRIPT}  5"
-riverctl map normal None F7 spawn "${BRIGHT_SCRIPT} -5"
+riverctl map normal None XF86MonBrightnessUp   spawn "${BRIGHT_SCRIPT}  5"
+riverctl map normal None XF86MonBrightnessDown spawn "${BRIGHT_SCRIPT} -5"
 
 riverctl map normal None Print spawn "${SCREENSHOT_SCRIPT}"
 
