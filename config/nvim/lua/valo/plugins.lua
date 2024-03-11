@@ -25,8 +25,10 @@ lazy.setup({
   "akinsho/toggleterm.nvim",
   "numToStr/Comment.nvim", -- Easily comment stuff
   "windwp/nvim-autopairs", -- Autopairs, integrates with both cmp and treesitter
-  "mhartington/formatter.nvim",
   "lewis6991/gitsigns.nvim",
+
+  "junegunn/fzf",
+  "junegunn/fzf.vim",
 
   -- interface
   "goolord/alpha-nvim",
@@ -41,13 +43,16 @@ lazy.setup({
   "valoran-M/gruvbox.nvim",
 
   -- cmp plugins
-  "hrsh7th/nvim-cmp", -- The completion plugin
-  "hrsh7th/cmp-nvim-lsp",
-  "hrsh7th/cmp-buffer", -- buffer completions
-  "hrsh7th/cmp-path", -- path completions
-  "hrsh7th/cmp-cmdline", -- cmdline completions
-  "saadparwaiz1/cmp_luasnip", -- snippet completions
-
+  {"hrsh7th/nvim-cmp",
+    dependencies={
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-path",
+      "hrsh7th/cmp-nvim-lua",
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-cmdline",
+      "kdheepak/cmp-latex-symbols",
+    }
+  },
   -- LSP
   "neovim/nvim-lspconfig", -- enable LSP
   "williamboman/nvim-lsp-installer",
@@ -82,7 +87,6 @@ lazy.setup({
 
   "mbbill/undotree",
   "chentoast/marks.nvim",
-  "alec-gibson/nvim-tetris",
 
   "norcalli/nvim-colorizer.lua",
 

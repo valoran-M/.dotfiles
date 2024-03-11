@@ -118,6 +118,17 @@ local mappings = {
     },
   },
 
+  p = {
+    name = "fuzzy",
+    f = { "<cmd>:Files<cr>",    "Files"};
+    g = { "<cmd>:GFiles<cr>",   "Git files"};
+    b = { "<cmd>:Buffers<cr>",  "Buffers"};
+    h = { "<cmd>:Helptags<cr>", "Help tags"};
+    r = { "<cmd>:Rg<cr>",       "Ripgrep"};
+    w = { "<cmd>:Windows<cr>",  "Windows"};
+    m = { "<cmd>:Marks<cr>",    "Marks"};
+  },
+
   l = {
     name = "LSP",
     a = { "<cmd>lua vim.lsp.buf.code_action()<cr>", "Code Action" },

@@ -3,7 +3,7 @@
 # set -ex
 
 MOD="Super"
-TERMINAL="foot"
+TERMINAL="kitty"
 FILE_EXPLORER="nemo"
 LAUNCHER="rofi -show drun"
 KEY_LAYOUT="fr"

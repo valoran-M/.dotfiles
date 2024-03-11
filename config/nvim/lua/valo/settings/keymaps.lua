@@ -65,3 +65,5 @@ keymap("v", "<A-k>", ":m '<-2<cr>gv=gv", { desc = "" })
 keymap("n", "<right>", "xp", { desc = "move char [right]" })
 keymap("n", "<left>", "hxph", { desc = "move char [left]" })
 
+vim.keymap.set("n", "<leader>pm", function() vim.cmd("Marks") end,    { desc = "p + [M]arks" })
+
