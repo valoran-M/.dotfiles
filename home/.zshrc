@@ -4,15 +4,10 @@
 #  _ / /\__ \ | | | | | (__
 # (_)___|___/_| |_|_|  \___|
 
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-export ZSH="$HOME/.oh-my-zsh"
+export ZSH="${HOME}/.oh-my-zsh"
 export EDITOR=nvim
 export OPENCV_LOG_LEVEL=ERROR
-export MESA_LOADER_DRIVER_OVERRIDE=i965
-
+export XDG_CONFIG_HOME="${HOME}/.config"
 export BAT_THEME="gruvbox-dark"
 
 # ZSH THEME
@@ -20,14 +15,14 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # ZSH PLUGINS
 plugins=(
-	git
-	sudo
-	dirhistory
+  git
+  sudo
+  dirhistory
   zsh-autosuggestions
-	fast-syntax-highlighting
+  fast-syntax-highlighting
 )
 
-source $ZSH/oh-my-zsh.sh
+source ${ZSH}/oh-my-zsh.sh
 
 ### ARCHIVE EXTRACTION
 # usage: ex <file>
@@ -56,25 +51,11 @@ ex ()
   fi
 }
 
-alias n="nvim ."
-alias ncf="nvim ~/.config/nvim/"
-
-# pacman and yay
-alias pacsyu="sudo pacman -Syyu"                 # update only standard pkgs
-alias yaysua="yay -Sua --noconfirm"              # update only AUR pkgs (yay)
-alias yaysyu="yay -Syu --noconfirm"              # update standard pkgs and AUR pkgs (yay)
-alias unlock="sudo rm /var/lib/pacman/db.lck"    # remove pacman lock
-
-# get fastest mirrors
-alias mirror="sudo reflector -f 30 -l 30 --number 10 --verbose --save /etc/pacman.d/mirrorlist"
-alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
-alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
-alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
+alias vi="nvim"
+alias vc="nvim ~/.config/nvim/"
 
 # Colorize grep output (good for log files)
 alias grep="grep --color=auto"
-alias egrep="egrep --color=auto"
-alias fgrep="fgrep --color=auto"
 
 # confirm before overwriting something
 alias cp="cp -i"
@@ -85,31 +66,13 @@ alias rm="rm -i"
 alias ocamllsp="ocamllsp --fallback-read-dot-merlin"
 
 #dotfiles
-alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
-autoload run-help
-alias help=run-help
+alias dotfiles='/usr/bin/git --git-dir=${HOME}/.dotfiles/ --work-tree=${HOME}'
 
 ## vim related ignore ##
 export MICRO_TRUECOLOR=1
 export VISUAL=vim
 
-## exports
-export LANG=fr_FR.UTF-8
-export HISTCONTROL=ignoreboth
-export BROWSER=brave
-export EDITOR=nvim
-export PATH
-export TERMINAL=konsole
-
 # export OCAMLRUNPARAM=b
-
-# zsh syntax highlighting stuff
-typeset -A ZSH_HIGHLIGHT_STYLES
-ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=magenta,underline'
-ZSH_HIGHLIGHT_STYLES[precommand]='fg=magenta,underline'
-ZSH_HIGHLIGHT_STYLES[arg0]='fg=magenta'
-ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=green,bold-italic'
 
 # zsh-syntax-highlighting call
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
@@ -118,7 +81,7 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # opam configuration
-[[ ! -r $HOME/.opam/opam-init/init.zsh ]] || source $HOME/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+[[ ! -r ${HOME}/.opam/opam-init/init.zsh ]] || source ${HOME}/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
 
 THEME=$(readlink -f ~/.config/waybar/theme.css | rev | cut -d '/' -f1 | rev )
 if [ $THEME = "light.css" ]; then

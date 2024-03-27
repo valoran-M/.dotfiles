@@ -28,7 +28,6 @@ local function on_attach(bufnr)
   local function opts(desc)
     return { desc = 'nvim-tree: ' .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
   end
-
   vim.keymap.set('n', '<C-]>', api.tree.change_root_to_node,          opts('CD'))
   vim.keymap.set('n', '<C-e>', api.node.open.replace_tree_buffer,     opts('Open: In Place'))
   vim.keymap.set('n', '<C-k>', api.node.show_info_popup,              opts('Info'))
@@ -81,8 +80,6 @@ local function on_attach(bufnr)
   vim.keymap.set('n', 'Y',     api.fs.copy.relative_path,             opts('Copy Relative Path'))
   vim.keymap.set('n', '<2-LeftMouse>',  api.node.open.edit,           opts('Open'))
   vim.keymap.set('n', '<2-RightMouse>', api.tree.change_root_to_node, opts('CD'))
-  -- END_DEFAULT_ON_ATTACH
-
 
   -- Mappings migrated from view.mappings.list
   --
@@ -95,7 +92,7 @@ local function on_attach(bufnr)
 
 end
 
-vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree })
+--[[ vim.api.nvim_create_autocmd({ "VimEnter" }, { callback = open_nvim_tree }) ]]
 
 --[[ local tree_cb = nvim_tree_config.nvim_tree_callback ]]
 
@@ -131,14 +128,6 @@ nvim_tree.setup {
     },
     view = {
         side = "left",
-        --[[ mappings = { ]]
-        --[[     custom_only = false, ]]
-        --[[     list = { ]]
-        --[[     { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" }, ]]
-        --[[     { key = "h", cb = tree_cb "close_node" }, ]]
-        --[[     { key = "v", cb = tree_cb "vsplit" }, ]]
-        --[[     }, ]]
-        --[[ }, ]]
         number = false,
         relativenumber = false,
     },

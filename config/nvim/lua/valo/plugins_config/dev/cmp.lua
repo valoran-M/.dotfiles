@@ -1,4 +1,7 @@
-local cmp = require("cmp")
+local cmp     = require("cmp")
+local luasnip = require "luasnip"
+
+require "luasnip/loaders/from_vscode".lazy_load()
 
 local kind_icons = {
   Text = "󰊄",
@@ -29,6 +32,12 @@ local kind_icons = {
 }
 
 cmp.setup {
+  snippet = {
+    expand = function(args)
+      luasnip.lsp_expand(args.body)
+    end,
+  },
+
   mapping = {
     ["<C-k>"]     = cmp.mapping.select_prev_item(),
     ["<C-j>"]     = cmp.mapping.select_next_item(),
@@ -36,11 +45,21 @@ cmp.setup {
     ["<C-f>"]     = cmp.mapping(cmp.mapping.scroll_docs(1), { "i", "c" }),
     ["<C-Space>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
     ["<C-y>"]     = cmp.config.disable,
-    ["<CR>"]      = cmp.mapping.confirm { select = false },
+    ["<CR>"]      = cmp.mapping.confirm { select = true },
     ["<C-e>"]     = cmp.mapping {
       i = cmp.mapping.abort(),
       c = cmp.mapping.close(),
     },
+    ["<Tab>"] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_next_item()
+      else
+        fallback()
+      end
+    end, {
+      "i",
+      "s",
+    }),
   },
   formatting = {
     format = function(entry, vim_item)
@@ -48,7 +67,7 @@ cmp.setup {
 
       vim_item.menu = ({
         buffer        = "[Buffer]",
-        latex_symbols = "[Tex]",
+        latex_symbols = "[Text]",
         path          = "[Path]",
       })[entry.source.name]
       return vim_item

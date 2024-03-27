@@ -1,9 +1,9 @@
 {
-    "height": 0,
+    "height": 32,
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
-    "layer": "top",
+    "layer": "left",
     "modules-left": ["river/tags", "custom/spotify"],
     "modules-center": ["clock"],
     "modules-right":
@@ -22,18 +22,6 @@
   "river/tags" : {
     "tag-labels" : [ "1", "2", "3", "4", "5", "󱅰", "󰝚", "󰙯", ""]
   },
-
-  "hyprland/workspaces": {
-       "all-outputs": true,
-       // "on-click": "activate",
-       "format": "{icon}",
-       "format-icons": {
-          "5": "",
-          "6": "󰙯",
-          "7": "",
-          "default": "●"
-       }
-   },
 
   "custom/spotify": {
     "exec": "python3 ~/.config/waybar/scripts/mediaplayer.py --player spotify",
@@ -94,7 +82,7 @@
     },
 
     "tray": {
-        "icon-size": 25,
+        "icon-size": 15,
         "spacing": 10
     },
 

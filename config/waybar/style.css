@@ -1,7 +1,6 @@
 * {
-  font-family: 'FiraCode Nerd Font';
-  font-size: 12pt;
-  min-height: 0;
+  font-family: 'FiraMono';
+  font-size: 10pt;
 }
 
 @import "theme.css";
@@ -9,7 +8,7 @@
 #waybar {
   background: transparent;
   color: @text;
-  margin: 5px 5px;
+  margin: 0px 0px;
 }
 
 #workspaces {
@@ -19,28 +18,24 @@
   margin-left: 1rem;
 }
 
-button {
-  box-shadow: inset 0 -3px transparent;
+#tags button {
   border: none;
   border-radius: 0rem;
-  min-width : 30px;
-  padding: 0 5px;
+  padding: 0 6px;
+  color: @blue;
 }
 
 #tags button.occupied {
   box-shadow: inset 0 -3px @white;
 }
 
-#tags button.hover {
-  box-shadow: inset 0 -3px @black;
-}
-
-#tags button {
-  color: @blue;
-}
-
 #tags button.focused {
   color: @purple;
+}
+
+#tags button:hover {
+  background: @white;
+  box-shadow: inset 0 -3px @white;
 }
 
 #tray,
