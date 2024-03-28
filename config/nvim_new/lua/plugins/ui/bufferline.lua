@@ -1,5 +1,5 @@
-  return function ()
-  require("bufferline").setup {
+return function ()
+  require('bufferline').setup {
     options = {
       numbers = "none",
       close_command = "Bdelete! %d",
@@ -26,3 +26,4 @@
     }
   }
 end
+
