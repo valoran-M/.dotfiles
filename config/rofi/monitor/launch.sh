@@ -1,8 +1,6 @@
 #!/bin/sh
 set -ex
 
-hyprctl reload
-
 monitors=$(hyprctl monitors -j)
 
 monitor1_name=$(echo $monitors | jq -r '.[0].name')
