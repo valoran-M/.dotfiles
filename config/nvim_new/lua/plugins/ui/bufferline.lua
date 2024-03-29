@@ -1,5 +1,6 @@
-return function ()
-  require('bufferline').setup {
+return {
+  "akinsho/bufferline.nvim",
+  opts = {
     options = {
       numbers = "none",
       close_command = "Bdelete! %d",
@@ -23,7 +24,6 @@ return function ()
       separator_style = "thin",
       enforce_regular_tabs = true,
       always_show_bufferline = true,
-    }
-  }
-end
-
+    },
+  },
+}

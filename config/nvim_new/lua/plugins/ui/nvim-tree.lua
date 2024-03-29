@@ -12,8 +12,10 @@ local function on_attach(bufnr)
   vim.keymap.set('n', 'h',    api.node.navigate.parent_close, opts('Close Directory'))
 end
 
-return function ()
-  require("nvim-tree").setup {
+return {
+  "nvim-tree/nvim-tree.lua",
+  dependencies = "nvim-tree/nvim-web-devicons",
+  opts = {
     filesystem_watchers = { enable = true },
     on_attach  = on_attach,
     update_cwd = true,
@@ -49,4 +51,4 @@ return function ()
         }
     }
   }
-end
+}

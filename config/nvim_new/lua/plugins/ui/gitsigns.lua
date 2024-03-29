@@ -1,5 +1,6 @@
-return function ()
-  require('gitsigns').setup {
+return  {
+  "lewis6991/gitsigns.nvim",
+  opts = {
     signs = {
       add =          { hl = "GitSignsAdd",    text = "▎", numhl = "GitSignsAddNr",    linehl = "GitSignsAddLn"    },
       change =       { hl = "GitSignsChange", text = "▎", numhl = "GitSignsChangeNr", linehl = "GitSignsChangeLn" },
@@ -37,7 +38,5 @@ return function ()
       row = 0,
       col = 1,
     },
-  }
-
-end
-
+  },
+}

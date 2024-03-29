@@ -54,10 +54,12 @@ g.loaded_ruby_provider = 0
 g.loaded_perl_provider = 0
 g.jupytext_fmt         = "py"
 g.jupytext_style       = "hydrogen"
-g.matchup_matchparen_offscreen = { method = "popup" }
 g.loaded_ruby_provider = 0
 g.loaded_perl_provider = 0
 g.loaded_node_provider = 0
+g.mapleader            = " "
+g.maplocalleader       = " "
+g.matchup_matchparen_offscreen = { method = "popup" }
 
 local wo = vim.wo
 wo.winfixwidth = true
