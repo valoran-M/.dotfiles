@@ -1,4 +1,7 @@
 return {
+-- Colorscheme
+  "valoran-M/gruvbox.nvim",
+
 -- Language
   "whonore/Coqtail",
   "andymass/vim-matchup",

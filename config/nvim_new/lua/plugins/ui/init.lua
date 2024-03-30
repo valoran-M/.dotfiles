@@ -1,6 +1,4 @@
 return {
-  "valoran-M/gruvbox.nvim",
-
   require('plugins.ui.alpha'),
   require('plugins.ui.gitsigns'),
   require('plugins.ui.lualine'),
