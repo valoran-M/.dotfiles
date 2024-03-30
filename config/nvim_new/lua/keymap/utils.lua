@@ -6,9 +6,10 @@ local keymap = {}
 local option = {}
 
 function option.default()
-  return
-    { silent  = false,
-      noremap = false, }
+  return {
+    silent  = false,
+    noremap = false,
+  }
 end
 
 function keymap.new_opt(...)

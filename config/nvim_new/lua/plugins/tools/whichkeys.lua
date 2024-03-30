@@ -2,7 +2,7 @@ return {
   "folke/which-key.nvim",
   opts = {
     window = {
-      border = "none",
+      border = "single",
       position = "bottom",
       margin = { 0, 0, 0, 0 },
       padding = { 1, 1, 1, 1 },

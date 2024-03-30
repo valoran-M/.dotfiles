@@ -28,13 +28,20 @@ return {
       section_separators   = { left = "", right = "" },
       disabled_filetypes   = { "dashboard", "NvimTree", "alpha", "Outline" },
       always_divide_middle = true,
+      symbols = {
+        modified        = ' ●',
+        alternate_file  = ' #',
+        directory       = ' ',
+        readonly        = ' ',
+        newfile         = ' ',
+      },
     },
     sections = {
       lualine_a = { "mode" },
-      lualine_b = { "buffers" },
-      lualine_c = { branch, diagnostics },
+      lualine_b = { "filename" },
+      lualine_c = { "tabs", branch, diagnostics },
 
-      lualine_x = { spaces, "encoding", "filetype" },
+      lualine_x = { "encoding", "filetype" },
       lualine_y = { "location" },
       lualine_z = { "progress" },
     },

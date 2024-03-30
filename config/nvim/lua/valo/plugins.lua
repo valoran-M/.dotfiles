@@ -56,7 +56,6 @@ lazy.setup({
   },
   -- LSP
   "neovim/nvim-lspconfig", -- enable LSP
-  "williamboman/nvim-lsp-installer",
   "jose-elias-alvarez/null-ls.nvim", -- LSP diagnostics and code actions
   "simrat39/rust-tools.nvim",
   "folke/trouble.nvim",

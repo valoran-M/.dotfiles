@@ -82,6 +82,5 @@ nmap({
   {"<leader>b", "<cmd>Buffers<cr>",  { desc = "Buffer"    } },
   {"<leader>h", "<cmd>Helptags<cr>", { desc = "Help tags" } },
   {"<leader>R", "<cmd>Rg<cr>",       { desc = "Ripgrep"   } },
-  {"<leader>w", "<cmd>Windows<cr>",  { desc = "Windows"   } },
   {"<leader>m", "<cmd>Marks<cr>",    { desc = "Marks"     } },
 })

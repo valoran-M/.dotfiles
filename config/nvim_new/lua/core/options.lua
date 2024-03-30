@@ -15,7 +15,7 @@ opt.ignorecase    = true
 opt.mouse         = ""
 opt.pumheight     = 10
 opt.showmode      = false
-opt.showtabline   = 2
+opt.showtabline   = 0
 opt.signcolumn    = "yes:1"
 opt.smartcase     = true
 opt.splitbelow    = true
@@ -46,6 +46,7 @@ opt.modifiable    = true
 opt.history       = 1000
 opt.spelllang     = "fr"
 opt.list          = true
+opt.listchars     = {tab = '▸ ', trail = '·', extends='❯',precedes='❮',nbsp='±'}
 
 local g = vim.g
 g.mapleader            = ' '
@@ -62,5 +63,4 @@ local wo = vim.wo
 wo.winfixwidth = true
 wo.linebreak   = true
 wo.number      = true
-wo.list        = false
 
