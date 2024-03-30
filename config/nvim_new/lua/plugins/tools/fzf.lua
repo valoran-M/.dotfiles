@@ -2,15 +2,7 @@ return {
   "junegunn/fzf.vim",
   dependencies = { "junegunn/fzf" },
   lazy = false,
-  keys = {
-    {"<leader>f", "<cmd>Files<cr>",    desc = "[F]iles"    },
-    {"<leader>g", "<cmd>GFiles<cr>",   desc = "[G]it files"},
-    {"<leader>b", "<cmd>Buffers<cr>",  desc = "[B]uffer"   },
-    {"<leader>h", "<cmd>Helptags<cr>", desc = "[H]elp tags"},
-    {"<leader>r", "<cmd>Rg<cr>",       desc = "[R]ipgrep"  },
-    {"<leader>w", "<cmd>Windows<cr>",  desc = "[W]indows"  },
-    {"<leader>m", "<cmd>Marks<cr>",    desc = "[M]arks"    },
-  },
+
   config = function()
     vim.g.fzf_colors = {
       fg=      {'fg', 'Normal'     },

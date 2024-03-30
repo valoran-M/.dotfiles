@@ -9,6 +9,7 @@ LAUNCHER="rofi -show drun"
 KEY_LAYOUT="fr"
 
 wlr-randr --output eDP-1 --scale 1.4 --pos 0,0
+wlr-randr --output DP-2  --scale 1   --pos 1611,0
 wlr-randr --output DP-3  --scale 1   --pos 1611,0
 
 riverctl keyboard-layout ${KEY_LAYOUT}

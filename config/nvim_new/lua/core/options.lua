@@ -1,5 +1,3 @@
--- Window option ---------------------------------------------------------------
-
 local opt = vim.opt
 opt.autoindent    = true
 opt.clipboard     = "unnamedplus"
@@ -49,7 +47,8 @@ opt.history       = 1000
 opt.spelllang     = "fr"
 opt.list          = true
 
-local g   = vim.g
+local g = vim.g
+g.mapleader            = ' '
 g.loaded_ruby_provider = 0
 g.loaded_perl_provider = 0
 g.jupytext_fmt         = "py"
@@ -57,8 +56,6 @@ g.jupytext_style       = "hydrogen"
 g.loaded_ruby_provider = 0
 g.loaded_perl_provider = 0
 g.loaded_node_provider = 0
-g.mapleader            = " "
-g.maplocalleader       = " "
 g.matchup_matchparen_offscreen = { method = "popup" }
 
 local wo = vim.wo
