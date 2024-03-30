@@ -71,16 +71,25 @@ imap({ "jk", "<esc>" })
 -- Leader ----------------------------------------------------------------------
 
 nmap({
-  { "<leader>e", "<cmd>NvimTreeToggle<cr>", { desc = "Explorer"           } },
-  { "<leader>w", "<cmd>w!<cr>",             { desc = "Save"               } },
-  { "<leader>d", "<cmd>Bdelete!<cr>",       { desc = "Close Buffer"       } },
-  { "<leader>r", [[:%s/\s\+$//e<cr>]],      { desc = "Remove + Trailling" } },
+  { "<leader>e",  "<cmd>NvimTreeToggle<cr>", { desc = "Explorer"           } },
+  { "<leader>w",  "<cmd>w!<cr>",             { desc = "Save"               } },
+  { "<leader>d",  "<cmd>Bdelete!<cr>",       { desc = "Close Buffer"       } },
+  { "<leader>r",  [[:%s/\s\+$//e<cr>]],      { desc = "Remove + Trailling" } },
 
--- fzf
-  {"<leader>f", "<cmd>Files<cr>",    { desc = "Files"     } },
-  {"<leader>g", "<cmd>GFiles<cr>",   { desc = "Git files" } },
-  {"<leader>b", "<cmd>Buffers<cr>",  { desc = "Buffer"    } },
-  {"<leader>h", "<cmd>Helptags<cr>", { desc = "Help tags" } },
-  {"<leader>R", "<cmd>Rg<cr>",       { desc = "Ripgrep"   } },
-  {"<leader>m", "<cmd>Marks<cr>",    { desc = "Marks"     } },
+-- FZF
+  { "<leader>f", "<cmd>Files<cr>",    { desc = "Files"     } },
+  { "<leader>g", "<cmd>GFiles<cr>",   { desc = "Git files" } },
+  { "<leader>b", "<cmd>Buffers<cr>",  { desc = "Buffer"    } },
+  { "<leader>h", "<cmd>Helptags<cr>", { desc = "Help tags" } },
+  { "<leader>R", "<cmd>Rg<cr>",       { desc = "Ripgrep"   } },
+  { "<leader>m", "<cmd>Marks<cr>",    { desc = "Marks"     } },
+
+-- Lsp
+  { "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<cr>",       { desc = "Code Action"      } },
+  { "<leader>lf", "<cmd>lua vim.lsp.buf.formatting()<cr>",        { desc = "Format"           } },
+  { "<leader>lj", "<cmd>lua vim.lsp.diagnostic.goto_next()<cr>",  { desc = "Next Diagnostic"  } },
+  { "<leader>lj", "<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>",  { desc = "Prev Diagnostic"  } },
+  { "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<cr>",            { desc = "Rename"           } },
+
+-- Git
 })
