@@ -1,3 +1,19 @@
+local g = vim.g
+g.mapleader            = ' '
+g.loaded_ruby_provider = 0
+g.loaded_perl_provider = 0
+g.jupytext_fmt         = "py"
+g.jupytext_style       = "hydrogen"
+g.loaded_ruby_provider = 0
+g.loaded_perl_provider = 0
+g.loaded_node_provider = 0
+g.matchup_matchparen_offscreen = { method = "popup" }
+
+local wo = vim.wo
+wo.winfixwidth = true
+wo.linebreak   = true
+wo.number      = true
+
 local opt = vim.opt
 opt.autoindent    = true
 opt.clipboard     = "unnamedplus"
@@ -31,7 +47,7 @@ opt.shiftwidth    = 2
 opt.tabstop       = 2
 opt.number        = true
 opt.numberwidth   = 2
-opt.wrap          = false
+opt.wrap          = true
 opt.scrolloff     = 8
 opt.sidescrolloff = 8
 opt.showcmd       = true
@@ -39,7 +55,7 @@ opt.smartindent   = true
 opt.ruler         = false
 opt.laststatus    = 3
 opt.whichwrap     = "bs<>[]"
-opt.wrapmargin    = 0
+opt.wrapmargin    = 1
 opt.textwidth     = 80
 opt.relativenumber= true
 opt.modifiable    = true
@@ -47,20 +63,3 @@ opt.history       = 1000
 opt.spelllang     = "fr"
 opt.list          = true
 opt.listchars     = {tab = '▸ ', trail = '·', extends='❯',precedes='❮',nbsp='±'}
-
-local g = vim.g
-g.mapleader            = ' '
-g.loaded_ruby_provider = 0
-g.loaded_perl_provider = 0
-g.jupytext_fmt         = "py"
-g.jupytext_style       = "hydrogen"
-g.loaded_ruby_provider = 0
-g.loaded_perl_provider = 0
-g.loaded_node_provider = 0
-g.matchup_matchparen_offscreen = { method = "popup" }
-
-local wo = vim.wo
-wo.winfixwidth = true
-wo.linebreak   = true
-wo.number      = true
-
