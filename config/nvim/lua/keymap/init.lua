@@ -84,12 +84,5 @@ nmap({
   { "<leader>R", "<cmd>Rg<cr>",       { desc = "Ripgrep"   } },
   { "<leader>m", "<cmd>Marks<cr>",    { desc = "Marks"     } },
 
--- Lsp
-  { "<leader>la", "<cmd>lua vim.lsp.buf.code_action()<cr>",       { desc = "Code Action"      } },
-  { "<leader>lf", "<cmd>lua vim.lsp.buf.formatting()<cr>",        { desc = "Format"           } },
-  { "<leader>lj", "<cmd>lua vim.lsp.diagnostic.goto_next()<cr>",  { desc = "Next Diagnostic"  } },
-  { "<leader>lj", "<cmd>lua vim.lsp.diagnostic.goto_prev()<cr>",  { desc = "Prev Diagnostic"  } },
-  { "<leader>lr", "<cmd>lua vim.lsp.buf.rename()<cr>",            { desc = "Rename"           } },
-
 -- Git
 })

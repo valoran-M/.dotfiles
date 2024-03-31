@@ -28,6 +28,8 @@ return {
   "cohama/lexima.vim",
   "krady21/compiler-explorer.nvim",
   "norcalli/nvim-colorizer.lua",
+  "junegunn/vim-peekaboo",
+  "machakann/vim-highlightedyank",
 
   "mbbill/undotree",
   { "chentoast/marks.nvim", config = function() require('marks').setup {} end },
