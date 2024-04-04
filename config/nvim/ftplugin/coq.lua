@@ -1,6 +1,4 @@
-vim.keymap.set("n", "<down>", "<Plug>CoqNext")
-vim.keymap.set("n", "<up>",   "<Plug>CoqUndo")
-
+vim.g.coqtail_nomap = 1
 vim.keymap.set("n", "<A-n>", "<Plug>CoqNext<Plug>CoqJumpToEnd")
 vim.keymap.set("n", "<A-N>", "<Plug>CoqUndo<Plug>CoqJumpToEnd")
 vim.keymap.set("n", "<A-,>", "<Plug>CoqToLine")
