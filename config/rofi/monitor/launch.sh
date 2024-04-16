@@ -27,12 +27,12 @@ DIR="~/.config/rofi/monitor"
 
 # Rofi CMD
 rofi_cmd() {
-	rofi -dmenu \
-		-theme ${DIR}/config.rasi
+  rofi -dmenu \
+    -theme ${DIR}/config.rasi
 }
 
 run_rofi() {
-	echo -e "$clone\n$hdmi\n$screen_right\n$laptop\n$screen_left" | rofi_cmd
+  echo -e "$clone\n$hdmi\n$screen_right\n$laptop\n$screen_left" | rofi_cmd
 }
 
 # Actions

@@ -25,36 +25,36 @@ DIR="~/.config/rofi/power_menu/"
 
 # Rofi CMD
 rofi_cmd() {
-	rofi -dmenu \
-		-p " $USER@$host" \
-		-mesg "󰍹 Last Login: $lastlogin |  Uptime: $uptime" \
-		-theme ${DIR}/config.rasi
+  rofi -dmenu \
+    -p " $USER@$host" \
+    -mesg "󰍹 Last Login: $lastlogin |  Uptime: $uptime" \
+    -theme ${DIR}/config.rasi
 }
 
 run_rofi() {
-	echo -e "$lock\n$shutdown\n$logout\n$suspend\n$reboot\n$hibernate" | rofi_cmd
+  echo -e "$lock\n$shutdown\n$logout\n$suspend\n$reboot\n$hibernate" | rofi_cmd
 }
 
 # Actions
 chosen="$(run_rofi)"
 case ${chosen} in
     $shutdown)
-		systemctl poweroff
+    systemctl poweroff
         ;;
     $reboot)
     systemctl reboot
         ;;
     $hibernate)
-		systemctl hibernate
+    systemctl hibernate
         ;;
     $lock)
-		swaylock
+    swaylock
         ;;
     $suspend)
-		systemctl suspend
+    systemctl suspend
         ;;
     $logout)
     killall battery.sh &
-		riverctl exit
+    riverctl exit
         ;;
 esac

@@ -30,6 +30,7 @@ return {
   "norcalli/nvim-colorizer.lua",
   "junegunn/vim-peekaboo",
   "machakann/vim-highlightedyank",
+  "tpope/vim-fugitive",
 
   "mbbill/undotree",
   { "chentoast/marks.nvim", config = function() require('marks').setup {} end },

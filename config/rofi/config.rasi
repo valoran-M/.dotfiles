@@ -1,14 +1,14 @@
 // Config //
+window {
+  width:          20%;
+  border-radius:  10px;
+}
+
 configuration {
-  modi:                       "drun,window,filebrowser";
-  show-icons:                 true;
-  display-drun:               " ";
-  display-window:             " ";
-  display-filebrowser:        " ";
-  drun-display-format:        "{name}";
-  window-format:              "{w} · {c} · {t}";
-  font:                       "Fira Code 10";
-  icon-theme:                 "Tela-circle-icon";
+  modi:        "drun";
+  show-icons:  true;
+  font:        "Fira Code 10";
+  icon-theme:  "Tela-circle-icon";
 }
 
 @import "theme.rasi"
@@ -17,7 +17,6 @@ configuration {
 
 mainbox {
   orientation: vertical;
-  width:       600px;
   children:    [inputbar, listview];
 }
 
@@ -25,25 +24,24 @@ mainbox {
 
 inputbar {
   orientation:  horizontal;
-  spacing:      10px;
-  children:     [textbox-prompt-colon, entry, dummy, mode-switcher];
+  spacing:      0px;
+  children:     [textbox-prompt-colon, entry];
 }
 
 entry {
-  width:            150px;
   border-radius:    0px;
   spacing:          0px;
-  padding:          12px 0px;
+  padding:          5px 0px;
   placeholder:      "Search";
 }
 
 textbox-prompt-colon {
-  str:              " ";
+  str:              "";
   enabled:          true;
   expand:           false;
   enabled:          true;
-  border-radius:    12px;
-  padding:          12px 12px;
+  border-radius:    0px;
+  padding:          5px 5px;
 }
 
 dummy {
@@ -51,44 +49,27 @@ dummy {
   background-color: transparent;
 }
 
-/* --- Mode Switcher --- */
-
-mode-switcher{
-  enabled:  true;
-  spacing:  10px;
-}
-
-button {
-  width:            40px;
-  padding:          12px;
-  border-radius:    12px;
-  background-color: @background;
-}
-
-button selected {
-}
-
 /* --- List view --- */
 
 listview {
   enabled:    true;
   columns:    1;
-  lines:      5;
+  lines:      7;
   cycle:      true;
   dynamic:    true;
   scrollbar:  true;
 
-  spacing:          10px;
-  cursor:           "default";
+  spacing:    5px;
+  cursor:     "default";
 }
 
 /* --- Element --- */
 
 element {
   enabled:        true;
-  spacing:        30px;
-  padding:        8px;
-  border-radius:  20px;
+  spacing:        10px;
+  padding:        5px;
+  border-radius:  5px;
   cursor:         pointer;
 }
 
@@ -99,7 +80,7 @@ element-text {
 }
 
 element-icon {
-  size:     48;
-  padding:  0 10 0 0;
+  size:     23;
+  padding:  0 0 0 0;
 }
 

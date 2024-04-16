@@ -5,7 +5,7 @@
 MOD="Super"
 TERMINAL="kitty"
 FILE_EXPLORER="nemo"
-LAUNCHER="rofi -show drun"
+LAUNCHER="rofi -show drun -matching fuzzy"
 KEY_LAYOUT="fr"
 
 wlr-randr --output eDP-1 --scale 1.4 --pos 0,0

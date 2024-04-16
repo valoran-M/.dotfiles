@@ -2,7 +2,7 @@
 
 set -ex
 
-BASEDIR=$(dirname "$0")/..
+BASEDIR=$(pwd)
 
 echo "Installing dotfiles..."
 mkdir -p $HOME/.config
@@ -36,8 +36,6 @@ do
   install_config ${homeconfig} $BASEDIR/home/${homeconfig} $HOME/${homeconfig}
 done
 
-ln -sf $BASEDIR/config/hypr/wallpapers/pacman-dark.png \
-       $HOME/.config/hypr/wallpapers/wallpaper.png
 ln -sf $BASEDIR/config/kitty/gruvbox-dark.conf \
        $HOME/.config/kitty/style.conf
 ln -sf $BASEDIR/config/rofi/gruvbox-dark.rasi \
