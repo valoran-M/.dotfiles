@@ -1,0 +1,62 @@
+#! /bin/sh
+
+MAIN_MON="eDP"
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc rule -r "*"
+
+setxkbmap -layout fr
+
+bspc config border_width                  2
+bspc config split_ratio                   0.5
+
+bspc config top_padding                   0
+bspc config bottom_padding                0
+bspc config left_padding                  0
+bspc config right_padding                 0
+bspc config window_gap                    0
+
+bspc monitor ${MAIN_MON} --reset-desktops 1 2 3 4 5 6 7 󰝚 󱅰 
+
+# Pointer
+bspc config pointer_modifier              mod4
+bspc config pointer_action1               move
+bspc config pointer_action2               resize_side
+bspc config pointer_action3               resize_corner
+
+bspc config pointer_follows_monitor       true
+bspc config click_to_focus                true
+
+bcpc config remove_unplugged_monitors     true
+
+# Border color
+bspc config normal_border_color           "#282828"
+bspc config active_border_color           "#282828"
+bspc config focused_border_color          "#a89984"
+bspc config presel_feedback_color         "#a89984"
+bspc config urgent_border_color           "#a89984"
+
+# Rules
+
+bspc rule -a thunderbird monitor=${MAIN_MON} desktop=^10 follow=on state=tiled
+bspc rule -a Signal      monitor=${MAIN_MON} desktop=^10 follow=on state=tiled
+bspc rule -a 'Discord'   monitor=${MAIN_MON} desktop=^9  follow=on state=tiled
+bspc rule -a Spotify     monitor=${MAIN_MON} desktop=^8  follow=on state=tiled
+bspc rule -a Pavucontrol                                           state=floating
+bspc rule -a Nm-connection-editor                                  state=floating
+bspc rule -a 'firefox:*:Picture-in-Picture' \
+                state=floating sticky=on rectangle=600x400+1880+80
+
+# Start
+feh --bg-fill ~/.config/river/wallpapers/wallpaper.png
+
+killall "xfce4-power-manager" ; xfce4-power-manager &
+killall "sxhkd"               ; sxhkd &
+killall "dunst"               ; dunst &
+killall "nm-applet"           ; nm-applet &
+killall "blueman-applet"      ; blueman-applet &
+
+${HOME}/git/dotfiles/scripts/polybar.sh
+
+

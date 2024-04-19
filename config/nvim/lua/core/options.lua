@@ -1,5 +1,6 @@
 local g = vim.g
 g.mapleader            = ' '
+vim.g.maplocalleader   = [[\]]
 g.loaded_ruby_provider = 0
 g.loaded_perl_provider = 0
 g.jupytext_fmt         = "py"
@@ -16,7 +17,7 @@ wo.number      = true
 
 local opt = vim.opt
 opt.autoindent    = true
-opt.clipboard     = "unnamedplus"
+opt.clipboard     = "unnamed,unnamedplus"
 opt.completeopt   = { "menuone", "noselect" }
 opt.cursorline    = true
 opt.colorcolumn   = "+1"

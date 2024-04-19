@@ -78,7 +78,7 @@ nmap({
 
 -- FZF
   { "<leader>f",  "<cmd>Files<cr>",    { desc = "Files"     } },
-  { "<leader>G",  "<cmd>GFiles<cr>",   { desc = "Git files" } },
+  { "<leader>g",  "<cmd>GFiles<cr>",   { desc = "Git files" } },
   { "<leader>b",  "<cmd>Buffers<cr>",  { desc = "Buffer"    } },
   { "<leader>h",  "<cmd>Helptags<cr>", { desc = "Help tags" } },
   { "<leader>rg", "<cmd>Rg<cr>",       { desc = "Ripgrep"   } },

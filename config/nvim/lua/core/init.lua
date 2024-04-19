@@ -1,3 +1,4 @@
+require('core.autocmd')
 require('core.options')
 require('core.lazy')
 require('core.colorscheme')

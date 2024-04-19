@@ -34,4 +34,11 @@ return {
 
   "mbbill/undotree",
   { "chentoast/marks.nvim", config = function() require('marks').setup {} end },
+
+  { "paulpatault/compit",
+     config = function() require('compit').init() end,
+     dependencies = "skywind3000/asyncrun.vim" },
+
+  { "max397574/better-escape.nvim",
+     config = function() require("better_escape").setup() end },
 }
