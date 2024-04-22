@@ -13,7 +13,7 @@ super + space
 super + shift + P
   ${HOME}/.config/rofi/power_menu/launch.sh
 
-super + shift + L
+super + shift + ctrl + L
   ${HOME}/git/dotfiles/scripts/lock.sh
 
 # Node #########################################################################

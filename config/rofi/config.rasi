@@ -7,7 +7,7 @@ window {
 configuration {
   modi:        "drun";
   show-icons:  true;
-  font:        "Fira Code 10";
+  font:        "Fira Code 15";
   icon-theme:  "Tela-circle-icon";
 }
 
@@ -80,7 +80,7 @@ element-text {
 }
 
 element-icon {
-  size:     23;
+  size:     35;
   padding:  0 0 0 0;
 }
 
