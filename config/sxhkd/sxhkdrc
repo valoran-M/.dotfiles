@@ -19,8 +19,17 @@ super + shift + ctrl + L
 # Node #########################################################################
 
 # move in monitor
-super + {_,shift +} {h,j,k,l}
-  bspc node -{f,s} {west,south,north,east}
+super + {_,shift +} {j,k}
+  bspc node -{f,s} {south,north}
+
+super + h
+  bspc node -f west || bspc monitor -f next
+
+super + shift + {h,l}
+  bspc node -s {west,east}
+
+super + l
+  bspc node -f east || bspc monitor -f prev
 
 # move to monitor
 super + ctrl + {h,l}
@@ -54,11 +63,6 @@ super + alt + shift + {h,j,k,l}
 # focus
 super + {1-9,0}
   bspc node --to-desktop focused:\^{1-9,10} -f
-#
-# Mointor ######################################################################
-
-super + M
-  bspc monitor -f next
 
 # Desktop ######################################################################
 
@@ -75,7 +79,7 @@ super + t
   bspc desktop -f eDP:\^10
 
 
-super + {ampersand,eacute,quotedbl,apostrophe,parenleft,minus,egrave,underscore,ccedilla}
+super + {ampersand,eacute,quotedbl,apostrophe,parenleft,minus,egrave,underscore,ccedilla,agrave}
   bspc desktop -f focused:\^{1-9,10}
 
 super + ctrl + {Left,Right}

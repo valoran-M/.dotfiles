@@ -30,6 +30,9 @@ bspc config click_to_focus                true
 
 bcpc config remove_unplugged_monitors     true
 
+bspc config remove_disabled_monitors      true
+bspc config merge_overlapping_monitors    true
+
 # Border color
 bspc config normal_border_color           "#282828"
 bspc config active_border_color           "#282828"
